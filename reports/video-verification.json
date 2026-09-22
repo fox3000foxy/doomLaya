@@ -1,0 +1,48 @@
+[
+  {
+    "file": "laya-vs-jev.mp4",
+    "frames": 2520,
+    "seconds": 72,
+    "sha256": "4b3684ad8c7e190e729e5b879a8f866ffb0403d640153d77e438c548ea909bc2",
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "35/1",
+          "nb_frames": "2520"
+        }
+      ],
+      "format": {
+        "duration": "72.000000",
+        "size": "135234959"
+      }
+    },
+    "pass": true
+  },
+  {
+    "file": "original-laya-vs-jev.mp4",
+    "frames": 6300,
+    "seconds": 180,
+    "sha256": "4dbd82011b49c77098ba127e5ce8a457bf349f82f1e044b2c9b28854a46195b6",
+    "ffprobe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 2560,
+          "height": 1440,
+          "r_frame_rate": "35/1",
+          "nb_frames": "6300"
+        }
+      ],
+      "format": {
+        "duration": "180.000000",
+        "size": "256603904"
+      }
+    },
+    "pass": true
+  }
+]

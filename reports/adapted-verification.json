@@ -1,0 +1,154 @@
+{
+  "experiment_valid": true,
+  "passed": true,
+  "errors": [],
+  "level_completed": true,
+  "acceptance_errors": [],
+  "authority": {
+    "pass": true,
+    "frames": 2256,
+    "accepted_decisions": 126,
+    "errors": [],
+    "level_completed": true,
+    "final_map": "MAP02"
+  },
+  "navigation": {
+    "max_stationary_seconds": 1.63,
+    "max_stationary_turn_reversals_per_second": 2,
+    "max_no_new_cell_seconds": 9.26,
+    "max_no_new_region_seconds": 11.51,
+    "aim_overridden_ticks": 0,
+    "unique_cells_last_episode": 3
+  },
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "35/1",
+        "nb_frames": "2256"
+      }
+    ],
+    "format": {
+      "duration": "64.457143"
+    }
+  },
+  "levels": [
+    {
+      "event": "level_finished",
+      "game_seconds": 61.429,
+      "map": "MAP01",
+      "alive": true,
+      "engine_finished": true
+    }
+  ],
+  "summary": {
+    "kills": 12,
+    "deaths": 0,
+    "decisions": 126,
+    "errors": 0,
+    "pickups": 3,
+    "levels_completed": 1,
+    "doors_opened": 3,
+    "stuck_recoveries": 0,
+    "bumps": 0,
+    "damage": 67.0,
+    "status": "completed",
+    "error": null,
+    "model": "doom-adapted",
+    "final_map": "MAP02",
+    "game_seconds": 64.457,
+    "wall_seconds": 64.451,
+    "latency_ms_median": 107.85,
+    "latency_ms_p90": 124.85,
+    "input_tokens_total": 65705,
+    "input_tokens_avg": 521.47,
+    "external_api_cost_usd": 0,
+    "local_compute_cost_usd": null,
+    "enemy_in_view_share": 0.5058,
+    "action_ticks": {
+      "wait": 21,
+      "exit": 673,
+      "pickup": 417,
+      "open_door": 74,
+      "attack": 1071
+    },
+    "reflex_ticks": {
+      "waypoint": 1115,
+      "navigation_exhausted": 94,
+      "select_model_weapon": 24,
+      "open_selected_door": 23,
+      "aim_selected_enemy": 906,
+      "approach_selected_enemy": 194,
+      "approach_selected_item": 33,
+      "activate_selected_exit": 2
+    },
+    "resource_gains": {
+      "hp": 24.0,
+      "ammo_2": 15,
+      "armor": 103.0,
+      "ammo_3": 8,
+      "weapon_3": 1
+    },
+    "video_frames": 2256,
+    "laya_health": {
+      "status": "ok",
+      "models": {
+        "doom-adapted": "mps"
+      },
+      "checkpoint": "laya-doom-v3",
+      "weights_sha256": "bb9083189517c5dc5c0e357062446df2ea73eadc3d909ec6ec7a6cee222a6147",
+      "training": {
+        "base": {
+          "command": 0.6125,
+          "weapon": 0.64
+        },
+        "epochs": [
+          {
+            "epoch": 1,
+            "validation": {
+              "command": 0.625,
+              "weapon": 0.66
+            },
+            "seconds": 110.2131155829411
+          },
+          {
+            "epoch": 2,
+            "validation": {
+              "command": 0.65,
+              "weapon": 0.76
+            },
+            "seconds": 211.01000695792027
+          },
+          {
+            "epoch": 3,
+            "validation": {
+              "command": 0.625,
+              "weapon": 0.92
+            },
+            "seconds": 310.50549962499645
+          },
+          {
+            "epoch": 4,
+            "validation": {
+              "command": 0.6625,
+              "weapon": 0.98
+            },
+            "seconds": 408.85978899989277
+          },
+          {
+            "epoch": 5,
+            "validation": {
+              "command": 0.725,
+              "weapon": 0.98
+            },
+            "seconds": 506.5924809999997
+          }
+        ]
+      }
+    },
+    "run": "20260922_000150_981242_final-doom-adapted-48"
+  }
+}

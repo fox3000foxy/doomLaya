@@ -1,0 +1,36 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.venv*/
+__pycache__/
+*.py[cod]
+.DS_Store
+_vizdoom.ini
+.map/
+# Generated experiments and binary assets
+runs/
+checkpoints/
+dist/
+*.safetensors
+*.pt
+*.pth
+*.wad
+*.mp4
+*.tar.gz
+# Original third-party inputs and historical diagnostics stay local
+post.txt
+DOOM-jev.md
+archive/
+diagnostics/*
+!diagnostics/verify_model_run.py
+training/v2/
+training/build_dataset_v1.py
+benchmark_suite.py
+compare_models.py
+probe_weapons.py
+summarize_comparison.py
+build_comparison_report.py
+*.tar
+*.log
+training/custom/

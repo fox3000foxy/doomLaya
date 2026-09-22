@@ -1,0 +1,23 @@
+{
+  "repo": "azalio/laya-doom-v3",
+  "revision": "d27276e3bf8275cdbc9a7a72d80cad656aa87bd7",
+  "public": true,
+  "weights_sha256": "bb9083189517c5dc5c0e357062446df2ea73eadc3d909ec6ec7a6cee222a6147",
+  "weights_bytes": 1685197088,
+  "files": [
+    ".gitattributes",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SHA256SUMS",
+    "best-epoch.json",
+    "encoder/config.json",
+    "model.safetensors",
+    "provenance.json",
+    "rl_agent_config.json",
+    "tokenizer/tokenizer.json",
+    "tokenizer/tokenizer_config.json",
+    "training-metrics.json"
+  ],
+  "anonymous_metadata_and_card_verified": true
+}

@@ -1,0 +1,166 @@
+{
+  "openrouter": {
+    "url": "https://openrouter.ai/api/v1/models/typesafe/jev-1.13/endpoints",
+    "cold_samples": [
+      {
+        "http_code": 200,
+        "time_namelookup": 0.030885,
+        "time_connect": 0.065162,
+        "time_appconnect": 0.227675,
+        "time_starttransfer": 0.323968,
+        "time_total": 0.324465
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.002453,
+        "time_connect": 0.02548,
+        "time_appconnect": 0.12721,
+        "time_starttransfer": 0.259725,
+        "time_total": 0.259851
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.001832,
+        "time_connect": 0.019474,
+        "time_appconnect": 0.342001,
+        "time_starttransfer": 0.540057,
+        "time_total": 0.540231
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.002197,
+        "time_connect": 0.024703,
+        "time_appconnect": 0.175109,
+        "time_starttransfer": 0.33928,
+        "time_total": 0.339427
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.002715,
+        "time_connect": 0.019917,
+        "time_appconnect": 0.421648,
+        "time_starttransfer": 0.65385,
+        "time_total": 0.653956
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.00212,
+        "time_connect": 0.02196,
+        "time_appconnect": 0.415848,
+        "time_starttransfer": 0.675462,
+        "time_total": 0.675643
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.001876,
+        "time_connect": 0.028928,
+        "time_appconnect": 0.140501,
+        "time_starttransfer": 0.234296,
+        "time_total": 0.234381
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 0.002584,
+        "time_connect": 0.028505,
+        "time_appconnect": 0.133172,
+        "time_starttransfer": 0.210903,
+        "time_total": 0.232327
+      }
+    ],
+    "warm_http_no_inference_ms": [
+      114.05424994882196,
+      156.24358295463026,
+      148.9636249607429,
+      107.1834999602288,
+      99.97120895422995,
+      102.73391695227474,
+      212.99783291760832,
+      90.41262499522418
+    ],
+    "tcp_handshake_rtt_ms_p50": 22.766499999999997,
+    "tls_handshake_ms_p50": 156.4595,
+    "warm_http_no_inference_ms_p50": 110.61887495452538
+  },
+  "laya": {
+    "url": "http://127.0.0.1:8000/health",
+    "cold_samples": [
+      {
+        "http_code": 200,
+        "time_namelookup": 6.3e-05,
+        "time_connect": 0.000286,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.002368,
+        "time_total": 0.002413
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 5.8e-05,
+        "time_connect": 0.000207,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.000749,
+        "time_total": 0.000777
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 8.1e-05,
+        "time_connect": 0.000293,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.001124,
+        "time_total": 0.001162
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 5.8e-05,
+        "time_connect": 0.000247,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.000775,
+        "time_total": 0.000807
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 5.8e-05,
+        "time_connect": 0.000196,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.000863,
+        "time_total": 0.000922
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 5.2e-05,
+        "time_connect": 0.000218,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.000741,
+        "time_total": 0.000766
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 5.6e-05,
+        "time_connect": 0.0002,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.000763,
+        "time_total": 0.000796
+      },
+      {
+        "http_code": 200,
+        "time_namelookup": 5.4e-05,
+        "time_connect": 0.000195,
+        "time_appconnect": 0.0,
+        "time_starttransfer": 0.000719,
+        "time_total": 0.000746
+      }
+    ],
+    "warm_http_no_inference_ms": [
+      0.6758749950677156,
+      2.08379200194031,
+      0.8461669785901904,
+      0.5996250547468662,
+      0.5132079822942615,
+      0.4515830660238862,
+      0.5146249895915389,
+      0.4785829223692417
+    ],
+    "tcp_handshake_rtt_ms_p50": 0.15750000000000003,
+    "tls_handshake_ms_p50": 0,
+    "warm_http_no_inference_ms_p50": 0.5571250221692026
+  }
+}

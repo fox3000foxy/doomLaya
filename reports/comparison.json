@@ -1,0 +1,251 @@
+{
+  "runs": [
+    {
+      "run": "20260922_000256_120207_final-typed-decisions-48",
+      "model": "typed-decisions",
+      "seed": 48,
+      "level_completed": false,
+      "exit_seconds": null,
+      "game_seconds": 180.0,
+      "wall_seconds": 180.005,
+      "deaths": 0,
+      "kills": 5,
+      "resources": {
+        "armor": 103.0,
+        "ammo_2": 30,
+        "hp": 25.0,
+        "ammo_3": 8,
+        "weapon_3": 1
+      },
+      "shots_by_weapon_ticks": {
+        "2": 165,
+        "1": 26
+      },
+      "errors": 0,
+      "requests": 350,
+      "stale_responses": 0,
+      "http_p50_ms": 106.075,
+      "http_p95_ms": 123.61750000000002,
+      "accepted_state_age_p50_ms": 114.42857142856155,
+      "cost_usd": 0,
+      "cost_complete": true,
+      "model_commands": {
+        "exit": 7,
+        "pickup": 272,
+        "explore": 16,
+        "open_door": 16,
+        "attack": 39
+      },
+      "model_weapons": {
+        "melee": 41,
+        "pistol": 272,
+        "shotgun": 37
+      },
+      "execution_status_ticks": {
+        "waiting": 20,
+        "executing": 4836,
+        "blocked": 1026,
+        "unavailable": 418
+      },
+      "experiment_valid": true,
+      "acceptance_passed": false,
+      "navigation": {
+        "max_stationary_seconds": 2.74,
+        "max_stationary_turn_reversals_per_second": 2,
+        "max_no_new_cell_seconds": 34.46,
+        "max_no_new_region_seconds": 71.6,
+        "aim_overridden_ticks": 0,
+        "unique_cells_last_episode": 127
+      },
+      "checkpoints": {
+        "status": "ok",
+        "repo": "convaiinnovations/laya",
+        "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+        "models": {
+          "english": "mps",
+          "multilingual": "mps",
+          "typed-decisions": "mps"
+        }
+      }
+    },
+    {
+      "run": "20260922_000150_981242_final-doom-adapted-48",
+      "model": "doom-adapted",
+      "seed": 48,
+      "level_completed": true,
+      "exit_seconds": 61.429,
+      "game_seconds": 64.457,
+      "wall_seconds": 64.451,
+      "deaths": 0,
+      "kills": 12,
+      "resources": {
+        "hp": 24.0,
+        "ammo_2": 15,
+        "armor": 103.0,
+        "ammo_3": 8,
+        "weapon_3": 1
+      },
+      "shots_by_weapon_ticks": {
+        "2": 551,
+        "3": 73
+      },
+      "errors": 0,
+      "requests": 126,
+      "stale_responses": 0,
+      "http_p50_ms": 107.85499999999999,
+      "http_p95_ms": 132.8775,
+      "accepted_state_age_p50_ms": 114.57142857142966,
+      "cost_usd": 0,
+      "cost_complete": true,
+      "model_commands": {
+        "exit": 38,
+        "pickup": 23,
+        "open_door": 4,
+        "attack": 61
+      },
+      "model_weapons": {
+        "pistol": 89,
+        "melee": 9,
+        "shotgun": 28
+      },
+      "execution_status_ticks": {
+        "waiting": 21,
+        "executing": 1865,
+        "blocked": 114,
+        "unavailable": 256
+      },
+      "experiment_valid": true,
+      "acceptance_passed": true,
+      "navigation": {
+        "max_stationary_seconds": 1.63,
+        "max_stationary_turn_reversals_per_second": 2,
+        "max_no_new_cell_seconds": 9.26,
+        "max_no_new_region_seconds": 11.51,
+        "aim_overridden_ticks": 0,
+        "unique_cells_last_episode": 3
+      },
+      "checkpoints": {
+        "status": "ok",
+        "models": {
+          "doom-adapted": "mps"
+        },
+        "checkpoint": "laya-doom-v3",
+        "weights_sha256": "bb9083189517c5dc5c0e357062446df2ea73eadc3d909ec6ec7a6cee222a6147",
+        "training": {
+          "base": {
+            "command": 0.6125,
+            "weapon": 0.64
+          },
+          "epochs": [
+            {
+              "epoch": 1,
+              "validation": {
+                "command": 0.625,
+                "weapon": 0.66
+              },
+              "seconds": 110.2131155829411
+            },
+            {
+              "epoch": 2,
+              "validation": {
+                "command": 0.65,
+                "weapon": 0.76
+              },
+              "seconds": 211.01000695792027
+            },
+            {
+              "epoch": 3,
+              "validation": {
+                "command": 0.625,
+                "weapon": 0.92
+              },
+              "seconds": 310.50549962499645
+            },
+            {
+              "epoch": 4,
+              "validation": {
+                "command": 0.6625,
+                "weapon": 0.98
+              },
+              "seconds": 408.85978899989277
+            },
+            {
+              "epoch": 5,
+              "validation": {
+                "command": 0.725,
+                "weapon": 0.98
+              },
+              "seconds": 506.5924809999997
+            }
+          ]
+        }
+      }
+    },
+    {
+      "run": "20260922_000557_402653_final-jev-48",
+      "model": "jev",
+      "seed": 48,
+      "level_completed": true,
+      "exit_seconds": 68.971,
+      "game_seconds": 72.0,
+      "wall_seconds": 71.994,
+      "deaths": 0,
+      "kills": 13,
+      "resources": {
+        "hp": 18.0,
+        "armor": 106.0,
+        "ammo_2": 15,
+        "ammo_3": 8,
+        "weapon_3": 1
+      },
+      "shots_by_weapon_ticks": {
+        "2": 337,
+        "3": 102
+      },
+      "errors": 0,
+      "requests": 139,
+      "stale_responses": 1,
+      "http_p50_ms": 356.63,
+      "http_p95_ms": 444.99999999999994,
+      "accepted_state_age_p50_ms": 371.42857142857366,
+      "cost_usd": 0.004580184,
+      "cost_complete": true,
+      "model_commands": {
+        "exit": 53,
+        "open_door": 9,
+        "attack": 49,
+        "pickup": 28
+      },
+      "model_weapons": {
+        "pistol": 107,
+        "shotgun": 32
+      },
+      "execution_status_ticks": {
+        "waiting": 42,
+        "executing": 1901,
+        "blocked": 10,
+        "unavailable": 567
+      },
+      "experiment_valid": true,
+      "acceptance_passed": true,
+      "navigation": {
+        "max_stationary_seconds": 1.8,
+        "max_stationary_turn_reversals_per_second": 2,
+        "max_no_new_cell_seconds": 5.0,
+        "max_no_new_region_seconds": 10.17,
+        "aim_overridden_ticks": 0,
+        "unique_cells_last_episode": 3
+      },
+      "checkpoints": {
+        "status": "ok",
+        "models": {
+          "jev": {
+            "model": "typesafe/jev-1.13",
+            "provider": "OpenRouter"
+          }
+        }
+      }
+    }
+  ],
+  "total_jev_cost_usd": 0.004580184
+}

@@ -1,0 +1,139 @@
+{
+  "hp": 100.0,
+  "armor": 0.0,
+  "weapon": 2,
+  "ammo": 50.0,
+  "inventory": {
+    "1": {
+      "owned": 1,
+      "ammo": 0
+    },
+    "2": {
+      "owned": 1,
+      "ammo": 50
+    },
+    "3": {
+      "owned": 0,
+      "ammo": 0
+    },
+    "4": {
+      "owned": 0,
+      "ammo": 50
+    },
+    "5": {
+      "owned": 0,
+      "ammo": 0
+    },
+    "6": {
+      "owned": 0,
+      "ammo": 0
+    },
+    "7": {
+      "owned": 0,
+      "ammo": 0
+    }
+  },
+  "enemies": [
+    {
+      "name": "Zombieman",
+      "id": 3,
+      "x": 1232.0,
+      "y": 192.0,
+      "distance": 20.67,
+      "bearing": -25.0,
+      "aim_bearing": -24.894246650458904
+    },
+    {
+      "name": "DoomImp",
+      "id": 12,
+      "x": 1328.0,
+      "y": -432.0,
+      "distance": 21.45,
+      "bearing": 30.9,
+      "aim_bearing": 30.897884200193957
+    },
+    {
+      "name": "Zombieman",
+      "id": 9,
+      "x": 1392.0,
+      "y": -160.0,
+      "distance": 22.01,
+      "bearing": 7.7,
+      "aim_bearing": 7.916921404931473
+    }
+  ],
+  "items": [
+    {
+      "name": "Shotgun",
+      "id": 10,
+      "x": 1536.0,
+      "y": -160.0,
+      "distance": 26.51,
+      "bearing": 8.1,
+      "category": "Weapon"
+    },
+    {
+      "name": "Clip",
+      "id": 8,
+      "x": 1576.0,
+      "y": 128.0,
+      "distance": 29.42,
+      "bearing": -9.7,
+      "category": "Ammo"
+    }
+  ],
+  "door": null,
+  "walls": {
+    "left": 6.33,
+    "ahead": 7.34,
+    "right": 6.33
+  },
+  "x": 687.9755859375,
+  "y": -184.3372039794922,
+  "angle": 9.711914064761231,
+  "dead_ids": [],
+  "kills": 0,
+  "obstacles": [
+    {
+      "name": "ExplosiveBarrel",
+      "id": 4,
+      "x": 1264.0,
+      "y": -224.0,
+      "distance": 18.04,
+      "bearing": 13.7
+    },
+    {
+      "name": "ExplosiveBarrel",
+      "id": 5,
+      "x": 912.0,
+      "y": 24.0,
+      "distance": 9.56,
+      "bearing": -33.2
+    },
+    {
+      "name": "ExplosiveBarrel",
+      "id": 7,
+      "x": 872.0,
+      "y": 40.0,
+      "distance": 9.07,
+      "bearing": -40.9
+    },
+    {
+      "name": "ExplosiveBarrel",
+      "id": 6,
+      "x": 1240.0,
+      "y": -72.0,
+      "distance": 17.6,
+      "bearing": -1.8
+    },
+    {
+      "name": "Column",
+      "id": 11,
+      "x": 1504.0,
+      "y": 128.0,
+      "distance": 27.3,
+      "bearing": -11.2
+    }
+  ],
+  "seconds": 3.257
+}

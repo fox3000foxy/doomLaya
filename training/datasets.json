@@ -1,0 +1,37 @@
+{
+  "training/train.json": {
+    "sha256": "bff966d9d6cd0a8b330c6a601640d717ec5c2b4a255df567d5381e1931381b6b",
+    "questions": 427,
+    "source_runs": [
+      "20260921_223707_627955_paired-typed-decisions-42",
+      "20260921_223804_296993_paired-jev-42",
+      "20260921_224044_597293_paired-typed-decisions-43"
+    ]
+  },
+  "training/validation.json": {
+    "sha256": "c32f536867d919bb231061653ad7d729d7fa111c81a0370e2859038a2d77fe35",
+    "questions": 130,
+    "source_runs": [
+      "20260921_224156_715030_paired-typed-decisions-44",
+      "20260921_224245_796456_paired-jev-44"
+    ]
+  },
+  "training/v3/train.json": {
+    "sha256": "ecb7745090a09ed14a09529585a04c00b7f95c89b4560e39509a56c3dbfcab05",
+    "questions": 979,
+    "source_runs": [
+      "20260921_223707_627955_paired-typed-decisions-42",
+      "20260921_223804_296993_paired-jev-42",
+      "20260921_223905_319051_paired-jev-43",
+      "20260921_224044_597293_paired-typed-decisions-43"
+    ]
+  },
+  "training/v3/validation.json": {
+    "sha256": "8f7a3e3f96a400df61f1c256897c9099fd1b1715fa47b01d320828d34660a460",
+    "questions": 130,
+    "source_runs": [
+      "20260921_224156_715030_paired-typed-decisions-44",
+      "20260921_224245_796456_paired-jev-44"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "checkpoint": "laya-doom-v3",
+  "best_epoch": {
+    "epoch": 5,
+    "validation": {
+      "command": 0.725,
+      "weapon": 0.98
+    },
+    "seconds": 506.5924809999997
+  },
+  "weights_sha256": "bb9083189517c5dc5c0e357062446df2ea73eadc3d909ec6ec7a6cee222a6147",
+  "adaptation": {
+    "frozen_encoder": false,
+    "trainable_encoder_layers": 3,
+    "training": "training/v3/train.json",
+    "validation": "training/v3/validation.json",
+    "data_sha256": {
+      "train.json": "ecb7745090a09ed14a09529585a04c00b7f95c89b4560e39509a56c3dbfcab05",
+      "validation.json": "8f7a3e3f96a400df61f1c256897c9099fd1b1715fa47b01d320828d34660a460"
+    },
+    "seed": 771,
+    "base_checkpoint": "laya-doom-head-v2",
+    "learning_rate": 0.0001
+  },
+  "laya_source_commit": "42626c348753fbb17572a813127df2278a1ec527",
+  "train_seeds": [
+    42,
+    43
+  ],
+  "validation_seed": 44,
+  "final_game_seed": 48,
+  "selection_metric": "validation command accuracy + validation weapon accuracy"
+}

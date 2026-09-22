@@ -1,0 +1,106 @@
+{
+  "experiment_valid": true,
+  "passed": true,
+  "errors": [],
+  "level_completed": true,
+  "acceptance_errors": [],
+  "authority": {
+    "pass": true,
+    "frames": 2520,
+    "accepted_decisions": 137,
+    "errors": [],
+    "level_completed": true,
+    "final_map": "MAP02"
+  },
+  "navigation": {
+    "max_stationary_seconds": 1.8,
+    "max_stationary_turn_reversals_per_second": 2,
+    "max_no_new_cell_seconds": 5.0,
+    "max_no_new_region_seconds": 10.17,
+    "aim_overridden_ticks": 0,
+    "unique_cells_last_episode": 3
+  },
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "35/1",
+        "nb_frames": "2520"
+      }
+    ],
+    "format": {
+      "duration": "72.000000"
+    }
+  },
+  "levels": [
+    {
+      "event": "level_finished",
+      "game_seconds": 68.971,
+      "map": "MAP01",
+      "alive": true,
+      "engine_finished": true
+    }
+  ],
+  "summary": {
+    "kills": 13,
+    "deaths": 0,
+    "decisions": 139,
+    "errors": 0,
+    "pickups": 10,
+    "levels_completed": 1,
+    "doors_opened": 4,
+    "stuck_recoveries": 0,
+    "bumps": 0,
+    "damage": 78.0,
+    "status": "completed",
+    "error": null,
+    "model": "jev",
+    "final_map": "MAP02",
+    "game_seconds": 72.0,
+    "wall_seconds": 71.994,
+    "latency_ms_median": 356.63,
+    "latency_ms_p90": 418.13,
+    "input_tokens_total": 109052,
+    "input_tokens_avg": 784.55,
+    "external_api_cost_usd": 0.004580184,
+    "local_compute_cost_usd": null,
+    "enemy_in_view_share": 0.3782,
+    "action_ticks": {
+      "wait": 42,
+      "exit": 917,
+      "open_door": 160,
+      "attack": 853,
+      "pickup": 548
+    },
+    "reflex_ticks": {
+      "waypoint": 1333,
+      "open_selected_door": 40,
+      "aim_selected_enemy": 533,
+      "approach_selected_enemy": 86,
+      "approach_selected_item": 82,
+      "select_model_weapon": 2,
+      "activate_selected_exit": 9
+    },
+    "resource_gains": {
+      "hp": 18.0,
+      "armor": 106.0,
+      "ammo_2": 15,
+      "ammo_3": 8,
+      "weapon_3": 1
+    },
+    "video_frames": 2520,
+    "laya_health": {
+      "status": "ok",
+      "models": {
+        "jev": {
+          "model": "typesafe/jev-1.13",
+          "provider": "OpenRouter"
+        }
+      }
+    },
+    "run": "20260922_000557_402653_final-jev-48"
+  }
+}

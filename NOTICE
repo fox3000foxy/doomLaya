@@ -1,0 +1,20 @@
+doomLaya
+Copyright 2026 doomLaya contributors
+
+Doom adaptation and model-owned action execution built on:
+- Laya, Convai Innovations: https://github.com/NandhaKishorM/laya
+  Apache License 2.0. Source revision 42626c348753fbb17572a813127df2278a1ec527.
+- convaiinnovations/laya typed-decisions checkpoint, Apache License 2.0:
+  https://huggingface.co/convaiinnovations/laya
+  Revision 1c5edc17a7acd8701df6fc341c0d179f1c62c982.
+- ModernBERT-large, Answer.AI / LightOn, Apache License 2.0:
+  https://huggingface.co/answerdotai/ModernBERT-large
+
+This project changes the decision head and the final three encoder layers
+of the typed-decisions checkpoint through supervised Doom-specific training.
+It is an independent experiment, not an official Laya or Jev release.
+
+ViZDoom, FreeDoom and third-party Python dependencies are installed separately
+and retain their own licenses. No Doom/FreeDoom WAD or ViZDoom binary is included
+in the source repository or model bundle. Original third-party Telegram text
+and the supplied Jev instructions are excluded from the publication set.

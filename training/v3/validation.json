@@ -1,0 +1,2723 @@
+[
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo.\nHostile enemies in sight: Zombieman #9 at 17.4 meters.\nObserved ground items: Medikit #23 (Health) at 7.7 meters; ArmorBonus #17 (Armor) at 10.0 meters; ArmorBonus #18 (Armor) at 10.4 meters; ArmorBonus #19 (Armor) at 10.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_9": "Fight Zombieman #9, 17.4m away.",
+        "collect_23": "Collect Medikit #23 (Health), 7.7m away. ",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 10.0m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 10.4m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 10.9m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_9",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 154,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nHostile enemies in sight: Zombieman #70 at 8.7 meters.\nObserved ground items: Shell #65 (Ammo) at 6.0 meters; Stimpack #64 (Health) at 7.0 meters; Shotgun #10 (Weapon) at 11.9 meters; Clip #30 (Ammo) at 14.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_70": "Fight Zombieman #70, 8.7m away.",
+        "collect_65": "Collect Shell #65 (Ammo), 6.0m away. ",
+        "collect_64": "Collect Stimpack #64 (Health), 7.0m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 11.9m away. ",
+        "collect_30": "Collect Clip #30 (Ammo), 14.9m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_70",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 672,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 98 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 8 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #58 (Health) at 3.6 meters; HealthBonus #57 (Health) at 5.0 meters; Shotgun #74 (Weapon) at 5.6 meters; HealthBonus #60 (Health) at 6.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 42.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 8.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1050,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 14.9 meters; HealthBonus #2 (Health) at 16.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 14.9m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 16.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 42,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 10.1 meters; HealthBonus #2 (Health) at 12.0 meters.\nA closed door is 4.0 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 50.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 98,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #52 (Armor) at 5.1 meters; ArmorBonus #53 (Armor) at 5.2 meters; ArmorBonus #54 (Armor) at 5.8 meters; Shotgun #74 (Weapon) at 6.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_52": "Collect ArmorBonus #52 (Armor), 5.1m away. ",
+        "collect_53": "Collect ArmorBonus #53 (Armor), 5.2m away. ",
+        "collect_54": "Collect ArmorBonus #54 (Armor), 5.8m away. ",
+        "collect_74": "Collect Shotgun #74 (Weapon), 6.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_52",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 980,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #104 (Weapon) at 4.2 meters; Shell #92 (Ammo) at 9.5 meters; Shell #106 (Ammo) at 11.5 meters; HealthBonus #90 (Health) at 11.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_104": "Collect Shotgun #104 (Weapon), 4.2m away. ",
+        "collect_92": "Collect Shell #92 (Ammo), 9.5m away. ",
+        "collect_106": "Collect Shell #106 (Ammo), 11.5m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 11.5m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1190,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 32 ammo.\nHostile enemies in sight: ShotgunGuy #61 at 14.4 meters.\nObserved ground items: Clip #64 (Ammo) at 3.1 meters; ArmorBonus #52 (Armor) at 7.4 meters; Stimpack #63 (Health) at 8.7 meters; ArmorBonus #53 (Armor) at 8.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_61": "Fight ShotgunGuy #61, 14.4m away.",
+        "collect_64": "Collect Clip #64 (Ammo), 3.1m away. ",
+        "collect_52": "Collect ArmorBonus #52 (Armor), 7.4m away. ",
+        "collect_63": "Collect Stimpack #63 (Health), 8.7m away. ",
+        "collect_53": "Collect ArmorBonus #53 (Armor), 8.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_61",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 686,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #65 (Health) at 9.5 meters; Shotgun #104 (Weapon) at 20.5 meters; HealthBonus #89 (Health) at 21.1 meters; HealthBonus #90 (Health) at 22.0 meters.\nA closed door is 9.0 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_65": "Collect Stimpack #65 (Health), 9.5m away. ",
+        "collect_104": "Collect Shotgun #104 (Weapon), 20.5m away. ",
+        "collect_89": "Collect HealthBonus #89 (Health), 21.1m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 22.0m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1274,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 37 ammo.\nHostile enemies in sight: DoomImp #12 at 19.0 meters.\nObserved ground items: Clip #43 (Ammo) at 4.4 meters; Clip #47 (Ammo) at 8.5 meters; GreenArmor #39 (Armor) at 8.8 meters; Clip #8 (Ammo) at 9.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 19.0m away.",
+        "collect_43": "Collect Clip #43 (Ammo), 4.4m away. ",
+        "collect_47": "Collect Clip #47 (Ammo), 8.5m away. ",
+        "collect_39": "Collect GreenArmor #39 (Armor), 8.8m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 9.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 462,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #52 (Armor) at 6.5 meters; ArmorBonus #53 (Armor) at 6.9 meters; ArmorBonus #54 (Armor) at 7.6 meters; Shotgun #74 (Weapon) at 7.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_52": "Collect ArmorBonus #52 (Armor), 6.5m away. ",
+        "collect_53": "Collect ArmorBonus #53 (Armor), 6.9m away. ",
+        "collect_54": "Collect ArmorBonus #54 (Armor), 7.6m away. ",
+        "collect_74": "Collect Shotgun #74 (Weapon), 7.9m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_52",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 966,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 44 ammo.\nHostile enemies in sight: DoomImp #12 at 13.1 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 3.2 meters; ArmorBonus #18 (Armor) at 4.2 meters; Medikit #23 (Health) at 4.2 meters; ArmorBonus #19 (Armor) at 5.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 13.1m away.",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 3.2m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 4.2m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 4.2m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 5.4m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 196,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 43 ammo.\nHostile enemies in sight: DoomImp #12 at 11.3 meters; ShotgunGuy #39 at 30.1 meters.\nObserved ground items: ArmorBonus #18 (Armor) at 3.6 meters; ArmorBonus #19 (Armor) at 4.9 meters; Clip #30 (Ammo) at 5.9 meters; ArmorBonus #22 (Armor) at 6.3 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 43.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 378,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 10.0 meters; HealthBonus #2 (Health) at 11.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 10.0m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 11.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 70,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 52 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #123 (Ammo) at 10.2 meters; ArmorBonus #139 (Armor) at 14.4 meters; ArmorBonus #111 (Armor) at 14.8 meters; ArmorBonus #110 (Armor) at 15.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_123": "Collect Clip #123 (Ammo), 10.2m away. ",
+        "collect_139": "Collect ArmorBonus #139 (Armor), 14.4m away. ",
+        "collect_111": "Collect ArmorBonus #111 (Armor), 14.8m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 15.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1568,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #65 (Health) at 11.1 meters; HealthBonus #89 (Health) at 23.1 meters; Shotgun #104 (Weapon) at 24.0 meters; HealthBonus #90 (Health) at 24.1 meters.\nA closed door is 5.5 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_65": "Collect Stimpack #65 (Health), 11.1m away. ",
+        "collect_89": "Collect HealthBonus #89 (Health), 23.1m away. ",
+        "collect_104": "Collect Shotgun #104 (Weapon), 24.0m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 24.1m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1288,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 1 armor.\nInventory: melee with 0 ammo; pistol with 46 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #36 (Ammo) at 4.6 meters; GreenArmor #32 (Armor) at 7.1 meters; ArmorBonus #18 (Armor) at 10.8 meters; Clip #8 (Ammo) at 11.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 46.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 322,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #65 (Health) at 11.1 meters; HealthBonus #89 (Health) at 23.1 meters; Shotgun #104 (Weapon) at 24.0 meters; HealthBonus #90 (Health) at 24.1 meters.\nA closed door is 5.5 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 14.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1288,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 36 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #29 (Ammo) at 2.7 meters; Shotgun #10 (Weapon) at 4.6 meters; Clip #8 (Ammo) at 7.2 meters; ArmorBonus #18 (Armor) at 8.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_29": "Collect Clip #29 (Ammo), 2.7m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 4.6m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 7.2m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 8.0m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_10",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 504,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #52 (Armor) at 6.9 meters; ArmorBonus #53 (Armor) at 7.2 meters; Shotgun #74 (Weapon) at 7.6 meters; HealthBonus #60 (Health) at 7.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_52": "Collect ArmorBonus #52 (Armor), 6.9m away. ",
+        "collect_53": "Collect ArmorBonus #53 (Armor), 7.2m away. ",
+        "collect_74": "Collect Shotgun #74 (Weapon), 7.6m away. ",
+        "collect_60": "Collect HealthBonus #60 (Health), 7.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_52",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 938,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #104 (Weapon) at 4.4 meters; Clip #88 (Ammo) at 5.5 meters; Shell #92 (Ammo) at 15.0 meters; HealthBonus #90 (Health) at 17.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 42.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 10.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1134,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 38 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #17 (Armor) at 1.9 meters; ArmorBonus #18 (Armor) at 2.8 meters; Medikit #23 (Health) at 3.6 meters; ArmorBonus #19 (Armor) at 4.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_17": "Collect ArmorBonus #17 (Armor), 1.9m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 2.8m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 3.6m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 4.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_17",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 294,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 32 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #51 (Ammo) at 6.0 meters; Stimpack #50 (Health) at 6.7 meters; Shotgun #10 (Weapon) at 11.5 meters; Clip #29 (Ammo) at 14.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_51": "Collect Shell #51 (Ammo), 6.0m away. ",
+        "collect_50": "Collect Stimpack #50 (Health), 6.7m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 11.5m away. ",
+        "collect_29": "Collect Clip #29 (Ammo), 14.4m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_51",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 854,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 29 ammo.\nHostile enemies in sight: Zombieman #70 at 2.6 meters.\nObserved ground items: Shell #65 (Ammo) at 10.0 meters; Shell #50 (Ammo) at 10.4 meters; Stimpack #64 (Health) at 11.6 meters; ArmorBonus #67 (Armor) at 11.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_70": "Fight Zombieman #70, 2.6m away.",
+        "collect_65": "Collect Shell #65 (Ammo), 10.0m away. ",
+        "collect_50": "Collect Shell #50 (Ammo), 10.4m away. ",
+        "collect_64": "Collect Stimpack #64 (Health), 11.6m away. ",
+        "collect_67": "Collect ArmorBonus #67 (Armor), 11.7m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_70",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 700,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 10.1 meters; HealthBonus #2 (Health) at 12.0 meters.\nA closed door is 4.0 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 10.1m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 12.0m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "open_door",
+    "kind": "command",
+    "category": "open_door",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 98,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 2 ammo.\nHostile enemies in sight: DoomImp #137 at 5.9 meters.\nObserved ground items: Clip #136 (Ammo) at 13.4 meters; ArmorBonus #128 (Armor) at 14.3 meters; ArmorBonus #127 (Armor) at 14.3 meters; Stimpack #123 (Health) at 14.3 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 2.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1386,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 25 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #64 (Health) at 4.1 meters; Shell #65 (Ammo) at 4.5 meters; Shotgun #10 (Weapon) at 13.3 meters; Clip #8 (Ammo) at 13.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 25.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 4.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 840,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 44 ammo.\nHostile enemies in sight: DoomImp #12 at 13.1 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 3.2 meters; ArmorBonus #18 (Armor) at 4.2 meters; Medikit #23 (Health) at 4.2 meters; ArmorBonus #19 (Armor) at 5.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 44.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 196,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #122 (Ammo) at 5.9 meters; Clip #123 (Ammo) at 15.2 meters; ArmorBonus #110 (Armor) at 17.8 meters; ArmorBonus #111 (Armor) at 17.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_122": "Collect Clip #122 (Ammo), 5.9m away. ",
+        "collect_123": "Collect Clip #123 (Ammo), 15.2m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 17.8m away. ",
+        "collect_111": "Collect ArmorBonus #111 (Armor), 17.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1442,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 1 armor.\nInventory: melee with 0 ammo; pistol with 41 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #25 (Ammo) at 5.3 meters; ArmorBonus #18 (Armor) at 5.4 meters; Clip #36 (Ammo) at 6.0 meters; ArmorBonus #19 (Armor) at 6.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 41.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 294,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #65 (Health) at 13.7 meters; HealthBonus #89 (Health) at 25.7 meters; HealthBonus #91 (Health) at 26.7 meters; HealthBonus #90 (Health) at 26.8 meters.\nA closed door is 1.8 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_65": "Collect Stimpack #65 (Health), 13.7m away. ",
+        "collect_89": "Collect HealthBonus #89 (Health), 25.7m away. ",
+        "collect_91": "Collect HealthBonus #91 (Health), 26.7m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 26.8m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "open_door",
+    "kind": "command",
+    "category": "open_door",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1302,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo.\nHostile enemies in sight: ShotgunGuy #39 at 28.5 meters.\nObserved ground items: ArmorBonus #18 (Armor) at 2.3 meters; ArmorBonus #19 (Armor) at 3.4 meters; ArmorBonus #22 (Armor) at 4.7 meters; Clip #30 (Ammo) at 5.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 42.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 392,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 2 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #50 (Ammo) at 5.6 meters; Shotgun #99 (Weapon) at 6.5 meters; ArmorBonus #67 (Armor) at 6.7 meters; ArmorBonus #68 (Armor) at 6.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_50": "Collect Shell #50 (Ammo), 5.6m away. ",
+        "collect_99": "Collect Shotgun #99 (Weapon), 6.5m away. ",
+        "collect_67": "Collect ArmorBonus #67 (Armor), 6.7m away. ",
+        "collect_68": "Collect ArmorBonus #68 (Armor), 6.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_50",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 994,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 31 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #48 (Health) at 3.3 meters; HealthBonus #49 (Health) at 3.4 meters; ArmorBonus #22 (Armor) at 4.4 meters; HealthBonus #46 (Health) at 4.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_48": "Collect HealthBonus #48 (Health), 3.3m away. ",
+        "collect_49": "Collect HealthBonus #49 (Health), 3.4m away. ",
+        "collect_22": "Collect ArmorBonus #22 (Armor), 4.4m away. ",
+        "collect_46": "Collect HealthBonus #46 (Health), 4.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_22",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 546,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 2 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #50 (Ammo) at 4.3 meters; Shotgun #99 (Weapon) at 6.6 meters; HealthBonus #74 (Health) at 7.0 meters; HealthBonus #73 (Health) at 7.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_50": "Collect Shell #50 (Ammo), 4.3m away. ",
+        "collect_99": "Collect Shotgun #99 (Weapon), 6.6m away. ",
+        "collect_74": "Collect HealthBonus #74 (Health), 7.0m away. ",
+        "collect_73": "Collect HealthBonus #73 (Health), 7.4m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_50",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 980,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #10 (Weapon) at 4.8 meters; Clip #30 (Ammo) at 7.6 meters; HealthBonus #48 (Health) at 11.1 meters; HealthBonus #46 (Health) at 11.9 meters.\nA closed door is 5.4 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 30.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 616,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 52 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #123 (Ammo) at 14.6 meters; ArmorBonus #113 (Armor) at 15.3 meters; ArmorBonus #112 (Armor) at 15.4 meters; ArmorBonus #114 (Armor) at 15.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 52.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 11.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1526,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 3 ammo.\nHostile enemies in sight: DoomImp #137 at 14.6 meters; DoomImp #121 at 17.9 meters.\nObserved ground items: Stimpack #47 (Health) at 19.2 meters; Clip #136 (Ammo) at 19.2 meters; Stimpack #123 (Health) at 21.6 meters; ArmorBonus #124 (Armor) at 21.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 3.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1344,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 14,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 1 armor.\nInventory: melee with 0 ammo; pistol with 45 ammo.\nHostile enemies in sight: DoomImp #12 at 15.5 meters; ShotgunGuy #39 at 34.4 meters.\nObserved ground items: Clip #30 (Ammo) at 7.7 meters; Clip #8 (Ammo) at 7.8 meters; ArmorBonus #18 (Armor) at 8.4 meters; Clip #36 (Ammo) at 8.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 15.5m away.",
+        "shoot_39": "Fight ShotgunGuy #39, 34.4m away.",
+        "collect_30": "Collect Clip #30 (Ammo), 7.7m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 7.8m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 8.4m away. ",
+        "collect_36": "Collect Clip #36 (Ammo), 8.5m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 350,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 43 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #17 (Armor) at 1.4 meters; ArmorBonus #18 (Armor) at 2.1 meters; Medikit #23 (Health) at 3.3 meters; ArmorBonus #19 (Armor) at 3.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 43.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 224,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 52 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #123 (Ammo) at 14.6 meters; ArmorBonus #113 (Armor) at 15.3 meters; ArmorBonus #112 (Armor) at 15.4 meters; ArmorBonus #114 (Armor) at 15.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_123": "Collect Clip #123 (Ammo), 14.6m away. ",
+        "collect_113": "Collect ArmorBonus #113 (Armor), 15.3m away. ",
+        "collect_112": "Collect ArmorBonus #112 (Armor), 15.4m away. ",
+        "collect_114": "Collect ArmorBonus #114 (Armor), 15.4m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1526,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 2 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #50 (Ammo) at 5.6 meters; Shotgun #99 (Weapon) at 6.5 meters; ArmorBonus #67 (Armor) at 6.7 meters; ArmorBonus #68 (Armor) at 6.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 2.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 994,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 12.1 meters; HealthBonus #2 (Health) at 13.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 12.1m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 13.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 56,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 10.0 meters; HealthBonus #2 (Health) at 11.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 10.0m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 11.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 70,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #110 (Ammo) at 6.0 meters; Shell #50 (Ammo) at 7.5 meters; Shotgun #60 (Weapon) at 8.9 meters; Shell #100 (Ammo) at 9.3 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 1.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1106,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 17.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 17.9m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 28,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 41 ammo.\nHostile enemies in sight: DoomImp #12 at 11.5 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 1.7 meters; ArmorBonus #18 (Armor) at 3.0 meters; ArmorBonus #19 (Armor) at 4.5 meters; Medikit #23 (Health) at 4.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 11.5m away.",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 1.7m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 3.0m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 4.5m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 4.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 238,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #122 (Ammo) at 4.4 meters; Clip #123 (Ammo) at 15.1 meters; Stimpack #109 (Health) at 17.0 meters; ArmorBonus #114 (Armor) at 17.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 11.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1414,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 7 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #56 (Ammo) at 3.4 meters; HealthBonus #58 (Health) at 5.9 meters; HealthBonus #57 (Health) at 7.0 meters; Shotgun #74 (Weapon) at 7.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_56": "Collect Shell #56 (Ammo), 3.4m away. ",
+        "collect_58": "Collect HealthBonus #58 (Health), 5.9m away. ",
+        "collect_57": "Collect HealthBonus #57 (Health), 7.0m away. ",
+        "collect_74": "Collect Shotgun #74 (Weapon), 7.5m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_56",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1036,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo; shotgun with 2 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #91 (Ammo) at 2.2 meters; Stimpack #90 (Health) at 2.7 meters; ArmorBonus #67 (Armor) at 5.1 meters; ArmorBonus #68 (Armor) at 5.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 30.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 2.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 952,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #122 (Ammo) at 2.8 meters; Clip #123 (Ammo) at 17.2 meters; ArmorBonus #113 (Armor) at 18.7 meters; ArmorBonus #114 (Armor) at 18.7 meters.\nA closed door is 6.8 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_122": "Collect Clip #122 (Ammo), 2.8m away. ",
+        "collect_123": "Collect Clip #123 (Ammo), 17.2m away. ",
+        "collect_113": "Collect ArmorBonus #113 (Armor), 18.7m away. ",
+        "collect_114": "Collect ArmorBonus #114 (Armor), 18.7m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1470,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 12 ammo.\nHostile enemies in sight: DoomImp #124 at 10.1 meters.\nObserved ground items: Clip #122 (Ammo) at 5.2 meters; Clip #123 (Ammo) at 15.6 meters; ArmorBonus #110 (Armor) at 18.0 meters; Stimpack #109 (Health) at 18.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 12.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1386,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo; shotgun with 3 ammo.\nHostile enemies in sight: ShotgunGuy #82 at 14.0 meters.\nObserved ground items: Stimpack #90 (Health) at 7.6 meters; ArmorBonus #67 (Armor) at 8.1 meters; Shell #50 (Ammo) at 9.1 meters; ArmorBonus #68 (Armor) at 9.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_82": "Fight ShotgunGuy #82, 14.0m away.",
+        "collect_90": "Collect Stimpack #90 (Health), 7.6m away. ",
+        "collect_67": "Collect ArmorBonus #67 (Armor), 8.1m away. ",
+        "collect_50": "Collect Shell #50 (Ammo), 9.1m away. ",
+        "collect_68": "Collect ArmorBonus #68 (Armor), 9.5m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_82",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 910,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 25 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #64 (Health) at 4.0 meters; Shell #65 (Ammo) at 4.4 meters; Clip #81 (Ammo) at 12.4 meters; Shotgun #10 (Weapon) at 13.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_64": "Collect Stimpack #64 (Health), 4.0m away. ",
+        "collect_65": "Collect Shell #65 (Ammo), 4.4m away. ",
+        "collect_81": "Collect Clip #81 (Ammo), 12.4m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 13.4m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_65",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 854,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #52 (Armor) at 2.7 meters; ArmorBonus #53 (Armor) at 3.1 meters; ArmorBonus #54 (Armor) at 4.1 meters; Shell #56 (Ammo) at 6.3 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_52": "Collect ArmorBonus #52 (Armor), 2.7m away. ",
+        "collect_53": "Collect ArmorBonus #53 (Armor), 3.1m away. ",
+        "collect_54": "Collect ArmorBonus #54 (Armor), 4.1m away. ",
+        "collect_56": "Collect Shell #56 (Ammo), 6.3m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_56",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 994,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 41 ammo.\nHostile enemies in sight: ShotgunGuy #39 at 26.0 meters.\nObserved ground items: ArmorBonus #19 (Armor) at 2.8 meters; ArmorBonus #18 (Armor) at 3.0 meters; ArmorBonus #22 (Armor) at 3.3 meters; Clip #30 (Ammo) at 5.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_39": "Fight ShotgunGuy #39, 26.0m away.",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 2.8m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 3.0m away. ",
+        "collect_22": "Collect ArmorBonus #22 (Armor), 3.3m away. ",
+        "collect_30": "Collect Clip #30 (Ammo), 5.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_39",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 406,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 98 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 7 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #58 (Health) at 2.1 meters; HealthBonus #57 (Health) at 3.6 meters; Shotgun #74 (Weapon) at 4.3 meters; HealthBonus #60 (Health) at 5.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_58": "Collect HealthBonus #58 (Health), 2.1m away. ",
+        "collect_57": "Collect HealthBonus #57 (Health), 3.6m away. ",
+        "collect_74": "Collect Shotgun #74 (Weapon), 4.3m away. ",
+        "collect_60": "Collect HealthBonus #60 (Health), 5.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1064,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 14.9 meters; HealthBonus #2 (Health) at 16.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 14.9m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 16.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 42,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 2 ammo.\nHostile enemies in sight: DoomImp #137 at 10.3 meters.\nObserved ground items: Clip #136 (Ammo) at 16.0 meters; Stimpack #123 (Health) at 18.0 meters; ArmorBonus #128 (Armor) at 18.0 meters; ArmorBonus #124 (Armor) at 18.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_137": "Fight DoomImp #137, 10.3m away.",
+        "collect_136": "Collect Clip #136 (Ammo), 16.0m away. ",
+        "collect_123": "Collect Stimpack #123 (Health), 18.0m away. ",
+        "collect_128": "Collect ArmorBonus #128 (Armor), 18.0m away. ",
+        "collect_124": "Collect ArmorBonus #124 (Armor), 18.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_137",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1358,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo; shotgun with 2 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #67 (Armor) at 3.8 meters; Clip #91 (Ammo) at 4.4 meters; ArmorBonus #68 (Armor) at 5.0 meters; Stimpack #90 (Health) at 5.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_67": "Collect ArmorBonus #67 (Armor), 3.8m away. ",
+        "collect_91": "Collect Clip #91 (Ammo), 4.4m away. ",
+        "collect_68": "Collect ArmorBonus #68 (Armor), 5.0m away. ",
+        "collect_90": "Collect Stimpack #90 (Health), 5.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_67",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 938,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #136 (Ammo) at 13.0 meters; ArmorBonus #128 (Armor) at 13.9 meters; ArmorBonus #127 (Armor) at 13.9 meters; Stimpack #123 (Health) at 14.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_136": "Collect Clip #136 (Ammo), 13.0m away. ",
+        "collect_128": "Collect ArmorBonus #128 (Armor), 13.9m away. ",
+        "collect_127": "Collect ArmorBonus #127 (Armor), 13.9m away. ",
+        "collect_123": "Collect Stimpack #123 (Health), 14.0m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1400,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 45 ammo.\nHostile enemies in sight: Zombieman #9 at 11.1 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 4.2 meters; Medikit #23 (Health) at 4.3 meters; ArmorBonus #18 (Armor) at 5.0 meters; ArmorBonus #19 (Armor) at 6.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_9": "Fight Zombieman #9, 11.1m away.",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 4.2m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 4.3m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 5.0m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 6.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_9",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 182,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #122 (Ammo) at 5.4 meters; Clip #123 (Ammo) at 15.7 meters; ArmorBonus #110 (Armor) at 18.2 meters; Stimpack #109 (Health) at 18.2 meters.\nA closed door is 9.4 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_122": "Collect Clip #122 (Ammo), 5.4m away. ",
+        "collect_123": "Collect Clip #123 (Ammo), 15.7m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 18.2m away. ",
+        "collect_109": "Collect Stimpack #109 (Health), 18.2m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1456,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #136 (Ammo) at 9.4 meters; ArmorBonus #139 (Armor) at 13.7 meters; ArmorBonus #125 (Armor) at 14.1 meters; ArmorBonus #124 (Armor) at 14.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_136": "Collect Clip #136 (Ammo), 9.4m away. ",
+        "collect_139": "Collect ArmorBonus #139 (Armor), 13.7m away. ",
+        "collect_125": "Collect ArmorBonus #125 (Armor), 14.1m away. ",
+        "collect_124": "Collect ArmorBonus #124 (Armor), 14.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1442,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #122 (Ammo) at 5.4 meters; Clip #123 (Ammo) at 15.7 meters; ArmorBonus #110 (Armor) at 18.2 meters; Stimpack #109 (Health) at 18.2 meters.\nA closed door is 9.4 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 11.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1456,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #47 (Health) at 12.8 meters; Shotgun #60 (Weapon) at 19.1 meters; HealthBonus #45 (Health) at 24.8 meters; HealthBonus #49 (Health) at 25.9 meters.\nA closed door is 3.1 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_47": "Collect Stimpack #47 (Health), 12.8m away. ",
+        "collect_60": "Collect Shotgun #60 (Weapon), 19.1m away. ",
+        "collect_45": "Collect HealthBonus #45 (Health), 24.8m away. ",
+        "collect_49": "Collect HealthBonus #49 (Health), 25.9m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "open_door",
+    "kind": "command",
+    "category": "open_door",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1302,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 3 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #136 (Ammo) at 9.4 meters; ArmorBonus #139 (Armor) at 13.7 meters; ArmorBonus #125 (Armor) at 14.1 meters; ArmorBonus #124 (Armor) at 14.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 1.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1442,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 7 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #94 (Armor) at 2.5 meters; ArmorBonus #93 (Armor) at 4.5 meters; Stimpack #65 (Health) at 9.2 meters; Shotgun #104 (Weapon) at 17.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 14.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1260,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 10.1 meters; HealthBonus #2 (Health) at 12.0 meters.\nA closed door is 4.0 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 10.1m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 12.0m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "open_door",
+    "kind": "command",
+    "category": "open_door",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 98,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #10 (Weapon) at 2.9 meters; Clip #30 (Ammo) at 4.8 meters; HealthBonus #48 (Health) at 7.9 meters; HealthBonus #46 (Health) at 8.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_10": "Collect Shotgun #10 (Weapon), 2.9m away. ",
+        "collect_30": "Collect Clip #30 (Ammo), 4.8m away. ",
+        "collect_48": "Collect HealthBonus #48 (Health), 7.9m away. ",
+        "collect_46": "Collect HealthBonus #46 (Health), 8.9m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_10",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 602,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #92 (Ammo) at 3.2 meters; Shotgun #104 (Weapon) at 8.0 meters; ArmorBonus #95 (Armor) at 9.9 meters; Stimpack #65 (Health) at 10.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_92": "Collect Shell #92 (Ammo), 3.2m away. ",
+        "collect_104": "Collect Shotgun #104 (Weapon), 8.0m away. ",
+        "collect_95": "Collect ArmorBonus #95 (Armor), 9.9m away. ",
+        "collect_65": "Collect Stimpack #65 (Health), 10.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_95",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1218,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 38 ammo.\nHostile enemies in sight: DoomImp #12 at 11.5 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 1.4 meters; ArmorBonus #18 (Armor) at 2.8 meters; ArmorBonus #19 (Armor) at 4.2 meters; Medikit #23 (Health) at 4.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 38.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 280,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #92 (Ammo) at 3.2 meters; Shotgun #104 (Weapon) at 8.0 meters; ArmorBonus #95 (Armor) at 9.9 meters; Stimpack #65 (Health) at 10.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 10.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1218,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 12 ammo.\nHostile enemies in sight: DoomImp #124 at 12.7 meters.\nObserved ground items: Clip #122 (Ammo) at 5.4 meters; Clip #123 (Ammo) at 17.1 meters; ArmorBonus #110 (Armor) at 19.6 meters; Stimpack #109 (Health) at 19.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_124": "Fight DoomImp #124, 12.7m away.",
+        "collect_122": "Collect Clip #122 (Ammo), 5.4m away. ",
+        "collect_123": "Collect Clip #123 (Ammo), 17.1m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 19.6m away. ",
+        "collect_109": "Collect Stimpack #109 (Health), 19.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_124",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1372,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 26 ammo.\nHostile enemies in sight: ShotgunGuy #63 at 9.4 meters.\nObserved ground items: Shell #50 (Ammo) at 10.1 meters; Shell #65 (Ammo) at 10.4 meters; ArmorBonus #67 (Armor) at 10.4 meters; ArmorBonus #68 (Armor) at 11.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 26.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 756,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 33 ammo.\nHostile enemies in sight: Zombieman #52 at 14.3 meters; ShotgunGuy #39 at 22.3 meters.\nObserved ground items: HealthBonus #48 (Health) at 3.3 meters; HealthBonus #49 (Health) at 3.5 meters; HealthBonus #46 (Health) at 4.8 meters; ArmorBonus #22 (Armor) at 4.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 33.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 518,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 32 ammo.\nHostile enemies in sight: ShotgunGuy #61 at 14.4 meters.\nObserved ground items: Clip #64 (Ammo) at 3.1 meters; ArmorBonus #52 (Armor) at 7.4 meters; Stimpack #63 (Health) at 8.7 meters; ArmorBonus #53 (Armor) at 8.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 32.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 686,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 36 ammo.\nHostile enemies in sight: ShotgunGuy #49 at 35.7 meters.\nObserved ground items: Clip #43 (Ammo) at 5.2 meters; Clip #8 (Ammo) at 7.4 meters; Clip #29 (Ammo) at 8.7 meters; ArmorBonus #18 (Armor) at 9.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_49": "Fight ShotgunGuy #49, 35.7m away.",
+        "collect_43": "Collect Clip #43 (Ammo), 5.2m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 7.4m away. ",
+        "collect_29": "Collect Clip #29 (Ammo), 8.7m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 9.7m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_49",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 476,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 36 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #10 (Weapon) at 8.6 meters; Clip #29 (Ammo) at 11.5 meters; Clip #8 (Ammo) at 12.5 meters; ArmorBonus #19 (Armor) at 19.0 meters.\nA closed door is 0.8 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 36.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 588,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo.\nHostile enemies in sight: DoomImp #12 at 11.9 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 1.5 meters; ArmorBonus #18 (Armor) at 2.8 meters; ArmorBonus #19 (Armor) at 4.3 meters; Medikit #23 (Health) at 4.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 11.9m away.",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 1.5m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 2.8m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 4.3m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 4.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 252,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #65 (Health) at 14.4 meters; HealthBonus #89 (Health) at 26.3 meters; HealthBonus #91 (Health) at 27.3 meters; HealthBonus #90 (Health) at 27.5 meters.\nA closed door is 0.8 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_65": "Collect Stimpack #65 (Health), 14.4m away. ",
+        "collect_89": "Collect HealthBonus #89 (Health), 26.3m away. ",
+        "collect_91": "Collect HealthBonus #91 (Health), 27.3m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 27.5m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "open_door",
+    "kind": "command",
+    "category": "open_door",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1316,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #104 (Weapon) at 3.2 meters; Shell #92 (Ammo) at 11.1 meters; Shell #106 (Ammo) at 11.9 meters; HealthBonus #90 (Health) at 12.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 10.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1162,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 11 ammo.\nHostile enemies in sight: ShotgunGuy #49 at 4.7 meters.\nObserved ground items: Clip #88 (Ammo) at 6.5 meters; Shell #92 (Ammo) at 16.0 meters; HealthBonus #90 (Health) at 18.0 meters; HealthBonus #89 (Health) at 19.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_49": "Fight ShotgunGuy #49, 4.7m away.",
+        "collect_88": "Collect Clip #88 (Ammo), 6.5m away. ",
+        "collect_92": "Collect Shell #92 (Ammo), 16.0m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 18.0m away. ",
+        "collect_89": "Collect HealthBonus #89 (Health), 19.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_49",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1120,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #49 (Health) at 3.3 meters; HealthBonus #48 (Health) at 3.4 meters; ArmorBonus #22 (Armor) at 4.2 meters; HealthBonus #45 (Health) at 4.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 30.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 560,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #49 (Health) at 3.3 meters; HealthBonus #48 (Health) at 3.4 meters; ArmorBonus #22 (Armor) at 4.2 meters; HealthBonus #45 (Health) at 4.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_49": "Collect HealthBonus #49 (Health), 3.3m away. ",
+        "collect_48": "Collect HealthBonus #48 (Health), 3.4m away. ",
+        "collect_22": "Collect ArmorBonus #22 (Armor), 4.2m away. ",
+        "collect_45": "Collect HealthBonus #45 (Health), 4.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_22",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 560,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nHostile enemies in sight: Zombieman #70 at 5.4 meters.\nObserved ground items: Shell #65 (Ammo) at 8.0 meters; Stimpack #64 (Health) at 9.4 meters; Shotgun #10 (Weapon) at 12.3 meters; Shell #50 (Ammo) at 12.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 30.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 686,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 50.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 0,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 39 ammo.\nHostile enemies in sight: DoomImp #12 at 11.5 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 1.4 meters; ArmorBonus #18 (Armor) at 2.8 meters; ArmorBonus #19 (Armor) at 4.2 meters; Medikit #23 (Health) at 4.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 11.5m away.",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 1.4m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 2.8m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 4.2m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 4.5m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 266,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 12 ammo.\nHostile enemies in sight: DoomImp #124 at 8.5 meters.\nObserved ground items: Clip #122 (Ammo) at 5.2 meters; Clip #123 (Ammo) at 15.2 meters; ArmorBonus #110 (Armor) at 17.5 meters; Stimpack #109 (Health) at 17.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_124": "Fight DoomImp #124, 8.5m away.",
+        "collect_122": "Collect Clip #122 (Ammo), 5.2m away. ",
+        "collect_123": "Collect Clip #123 (Ammo), 15.2m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 17.5m away. ",
+        "collect_109": "Collect Stimpack #109 (Health), 17.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_124",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1400,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 37 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Medikit #23 (Health) at 2.5 meters; ArmorBonus #17 (Armor) at 3.0 meters; ArmorBonus #18 (Armor) at 3.3 meters; ArmorBonus #19 (Armor) at 4.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 37.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 308,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo; shotgun with 2 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #91 (Ammo) at 2.2 meters; Stimpack #90 (Health) at 2.7 meters; ArmorBonus #67 (Armor) at 5.1 meters; ArmorBonus #68 (Armor) at 5.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_91": "Collect Clip #91 (Ammo), 2.2m away. ",
+        "collect_90": "Collect Stimpack #90 (Health), 2.7m away. ",
+        "collect_67": "Collect ArmorBonus #67 (Armor), 5.1m away. ",
+        "collect_68": "Collect ArmorBonus #68 (Armor), 5.7m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_67",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 952,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #30 (Ammo) at 4.2 meters; Shotgun #10 (Weapon) at 4.6 meters; HealthBonus #48 (Health) at 5.0 meters; HealthBonus #49 (Health) at 6.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_30": "Collect Clip #30 (Ammo), 4.2m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 4.6m away. ",
+        "collect_48": "Collect HealthBonus #48 (Health), 5.0m away. ",
+        "collect_49": "Collect HealthBonus #49 (Health), 6.0m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_10",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 588,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 0,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #104 (Weapon) at 5.2 meters; Shell #92 (Ammo) at 6.6 meters; Stimpack #65 (Health) at 12.3 meters; HealthBonus #90 (Health) at 12.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_104": "Collect Shotgun #104 (Weapon), 5.2m away. ",
+        "collect_92": "Collect Shell #92 (Ammo), 6.6m away. ",
+        "collect_65": "Collect Stimpack #65 (Health), 12.3m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 12.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1204,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #65 (Health) at 14.4 meters; HealthBonus #89 (Health) at 26.3 meters; HealthBonus #91 (Health) at 27.3 meters; HealthBonus #90 (Health) at 27.5 meters.\nA closed door is 0.8 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 14.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1316,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 36 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #10 (Weapon) at 8.6 meters; Clip #29 (Ammo) at 11.5 meters; Clip #8 (Ammo) at 12.5 meters; ArmorBonus #19 (Armor) at 19.0 meters.\nA closed door is 0.8 meters away.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_10": "Collect Shotgun #10 (Weapon), 8.6m away. ",
+        "collect_29": "Collect Clip #29 (Ammo), 11.5m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 12.5m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 19.0m away. ",
+        "open_door": "Approach and open the closed door.",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_10",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 588,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #111 (Ammo) at 4.6 meters; Shell #50 (Ammo) at 5.7 meters; HealthBonus #46 (Health) at 6.2 meters; HealthBonus #48 (Health) at 7.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_111": "Collect Shell #111 (Ammo), 4.6m away. ",
+        "collect_50": "Collect Shell #50 (Ammo), 5.7m away. ",
+        "collect_46": "Collect HealthBonus #46 (Health), 6.2m away. ",
+        "collect_48": "Collect HealthBonus #48 (Health), 7.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_111",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1148,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 32 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #51 (Ammo) at 6.0 meters; Stimpack #50 (Health) at 6.4 meters; Shotgun #10 (Weapon) at 11.2 meters; Clip #8 (Ammo) at 13.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_51": "Collect Shell #51 (Ammo), 6.0m away. ",
+        "collect_50": "Collect Stimpack #50 (Health), 6.4m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 11.2m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 13.7m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_51",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 840,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 26 ammo.\nHostile enemies in sight: ShotgunGuy #63 at 9.4 meters.\nObserved ground items: Shell #50 (Ammo) at 10.1 meters; Shell #65 (Ammo) at 10.4 meters; ArmorBonus #67 (Armor) at 10.4 meters; ArmorBonus #68 (Armor) at 11.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_63": "Fight ShotgunGuy #63, 9.4m away.",
+        "collect_50": "Collect Shell #50 (Ammo), 10.1m away. ",
+        "collect_65": "Collect Shell #65 (Ammo), 10.4m away. ",
+        "collect_67": "Collect ArmorBonus #67 (Armor), 10.4m away. ",
+        "collect_68": "Collect ArmorBonus #68 (Armor), 11.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_63",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 756,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 49 ammo.\nHostile enemies in sight: Zombieman #16 at 12.6 meters; Zombieman #3 at 19.2 meters; Zombieman #9 at 21.0 meters.\nObserved ground items: HealthBonus #1 (Health) at 11.9 meters; HealthBonus #2 (Health) at 13.4 meters; Shotgun #10 (Weapon) at 25.5 meters; Clip #8 (Ammo) at 28.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_16": "Fight Zombieman #16, 12.6m away.",
+        "shoot_3": "Fight Zombieman #3, 19.2m away.",
+        "shoot_9": "Fight Zombieman #9, 21.0m away.",
+        "collect_1": "Collect HealthBonus #1 (Health), 11.9m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 13.4m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 25.5m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 28.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_16",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 126,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 52 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #123 (Ammo) at 10.0 meters; ArmorBonus #139 (Armor) at 13.3 meters; ArmorBonus #111 (Armor) at 13.5 meters; ArmorBonus #110 (Armor) at 13.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_123": "Collect Clip #123 (Ammo), 10.0m away. ",
+        "collect_139": "Collect ArmorBonus #139 (Armor), 13.3m away. ",
+        "collect_111": "Collect ArmorBonus #111 (Armor), 13.5m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 13.7m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1554,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: ArmorBonus #95 (Armor) at 6.7 meters; ArmorBonus #94 (Armor) at 8.7 meters; Stimpack #65 (Health) at 9.3 meters; ArmorBonus #93 (Armor) at 10.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_95": "Collect ArmorBonus #95 (Armor), 6.7m away. ",
+        "collect_94": "Collect ArmorBonus #94 (Armor), 8.7m away. ",
+        "collect_65": "Collect Stimpack #65 (Health), 9.3m away. ",
+        "collect_93": "Collect ArmorBonus #93 (Armor), 10.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_95",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1232,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 11.8 meters; HealthBonus #2 (Health) at 13.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_1": "Collect HealthBonus #1 (Health), 11.8m away. ",
+        "collect_2": "Collect HealthBonus #2 (Health), 13.4m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 112,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #10 (Weapon) at 2.9 meters; Clip #30 (Ammo) at 4.8 meters; HealthBonus #48 (Health) at 7.9 meters; HealthBonus #46 (Health) at 8.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 30.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 602,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #99 (Weapon) at 3.5 meters; HealthBonus #74 (Health) at 4.0 meters; HealthBonus #73 (Health) at 4.4 meters; HealthBonus #72 (Health) at 5.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 1.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1050,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 32 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #51 (Ammo) at 6.3 meters; Stimpack #50 (Health) at 7.0 meters; Shotgun #10 (Weapon) at 11.1 meters; Clip #29 (Ammo) at 14.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 32.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 4.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 826,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 98 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 8 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #58 (Health) at 3.6 meters; HealthBonus #57 (Health) at 5.0 meters; Shotgun #74 (Weapon) at 5.6 meters; HealthBonus #60 (Health) at 6.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_58": "Collect HealthBonus #58 (Health), 3.6m away. ",
+        "collect_57": "Collect HealthBonus #57 (Health), 5.0m away. ",
+        "collect_74": "Collect Shotgun #74 (Weapon), 5.6m away. ",
+        "collect_60": "Collect HealthBonus #60 (Health), 6.5m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1050,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 36 ammo.\nHostile enemies in sight: ShotgunGuy #49 at 32.7 meters.\nObserved ground items: Clip #29 (Ammo) at 5.5 meters; Clip #43 (Ammo) at 6.3 meters; Clip #8 (Ammo) at 7.1 meters; Shotgun #10 (Weapon) at 7.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 36.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 490,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo.\nHostile enemies in sight: Zombieman #9 at 17.4 meters.\nObserved ground items: Medikit #23 (Health) at 7.7 meters; ArmorBonus #17 (Armor) at 10.0 meters; ArmorBonus #18 (Armor) at 10.4 meters; ArmorBonus #19 (Armor) at 10.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 47.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 154,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 42 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #88 (Ammo) at 6.9 meters; HealthBonus #90 (Health) at 18.6 meters; HealthBonus #89 (Health) at 19.6 meters; HealthBonus #91 (Health) at 20.7 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 42.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 11.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1106,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 39 ammo.\nHostile enemies in sight: ShotgunGuy #39 at 22.6 meters.\nObserved ground items: HealthBonus #49 (Health) at 3.3 meters; HealthBonus #48 (Health) at 3.4 meters; ArmorBonus #22 (Armor) at 4.1 meters; HealthBonus #45 (Health) at 4.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_39": "Fight ShotgunGuy #39, 22.6m away.",
+        "collect_49": "Collect HealthBonus #49 (Health), 3.3m away. ",
+        "collect_48": "Collect HealthBonus #48 (Health), 3.4m away. ",
+        "collect_22": "Collect ArmorBonus #22 (Armor), 4.1m away. ",
+        "collect_45": "Collect HealthBonus #45 (Health), 4.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_39",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 434,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 4 armor.\nInventory: melee with 0 ammo; pistol with 37 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #38 (Ammo) at 1.4 meters; Clip #43 (Ammo) at 2.2 meters; Clip #47 (Ammo) at 5.4 meters; GreenArmor #39 (Armor) at 7.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 37.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 448,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 44 ammo.\nHostile enemies in sight: DoomImp #12 at 13.3 meters.\nObserved ground items: ArmorBonus #17 (Armor) at 3.4 meters; ArmorBonus #18 (Armor) at 4.4 meters; Medikit #23 (Health) at 4.5 meters; ArmorBonus #19 (Armor) at 5.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_12": "Fight DoomImp #12, 13.3m away.",
+        "collect_17": "Collect ArmorBonus #17 (Armor), 3.4m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 4.4m away. ",
+        "collect_23": "Collect Medikit #23 (Health), 4.5m away. ",
+        "collect_19": "Collect ArmorBonus #19 (Armor), 5.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_12",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 196,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 10.0 meters; HealthBonus #2 (Health) at 11.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 50.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 70,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #110 (Ammo) at 3.9 meters; Shotgun #60 (Weapon) at 7.4 meters; Shell #50 (Ammo) at 7.7 meters; Shell #100 (Ammo) at 9.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_110": "Collect Clip #110 (Ammo), 3.9m away. ",
+        "collect_60": "Collect Shotgun #60 (Weapon), 7.4m away. ",
+        "collect_50": "Collect Shell #50 (Ammo), 7.7m away. ",
+        "collect_100": "Collect Shell #100 (Ammo), 9.1m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_50",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1092,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 12 ammo.\nHostile enemies in sight: DoomImp #124 at 10.1 meters.\nObserved ground items: Clip #122 (Ammo) at 5.2 meters; Clip #123 (Ammo) at 15.6 meters; ArmorBonus #110 (Armor) at 18.0 meters; Stimpack #109 (Health) at 18.0 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_124": "Fight DoomImp #124, 10.1m away.",
+        "collect_122": "Collect Clip #122 (Ammo), 5.2m away. ",
+        "collect_123": "Collect Clip #123 (Ammo), 15.6m away. ",
+        "collect_110": "Collect ArmorBonus #110 (Armor), 18.0m away. ",
+        "collect_109": "Collect Stimpack #109 (Health), 18.0m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_124",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1386,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 34 ammo.\nHostile enemies in sight: Zombieman #52 at 14.3 meters; ShotgunGuy #39 at 23.0 meters.\nObserved ground items: HealthBonus #48 (Health) at 3.3 meters; HealthBonus #49 (Health) at 3.5 meters; HealthBonus #46 (Health) at 4.8 meters; ArmorBonus #22 (Armor) at 4.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 34.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 504,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 11.8 meters; HealthBonus #2 (Health) at 13.4 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 50.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 112,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 11 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #122 (Ammo) at 4.7 meters; Clip #123 (Ammo) at 15.0 meters; Stimpack #109 (Health) at 17.1 meters; ArmorBonus #110 (Armor) at 17.1 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 11.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1428,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shell #111 (Ammo) at 4.6 meters; Shell #50 (Ammo) at 5.7 meters; HealthBonus #46 (Health) at 6.2 meters; HealthBonus #48 (Health) at 7.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 1.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1148,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 27 ammo.\nHostile enemies in sight: ShotgunGuy #63 at 9.7 meters.\nObserved ground items: Shell #50 (Ammo) at 10.1 meters; Shell #65 (Ammo) at 10.4 meters; ArmorBonus #67 (Armor) at 10.4 meters; ArmorBonus #68 (Armor) at 11.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_63": "Fight ShotgunGuy #63, 9.7m away.",
+        "collect_50": "Collect Shell #50 (Ammo), 10.1m away. ",
+        "collect_65": "Collect Shell #65 (Ammo), 10.4m away. ",
+        "collect_67": "Collect ArmorBonus #67 (Armor), 10.4m away. ",
+        "collect_68": "Collect ArmorBonus #68 (Armor), 11.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_63",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 742,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 9 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 14 ammo.\nHostile enemies in sight: Zombieman #107 at 9.5 meters; DoomImp #108 at 22.5 meters.\nObserved ground items: Stimpack #65 (Health) at 14.1 meters; HealthBonus #89 (Health) at 26.0 meters; ArmorBonus #110 (Armor) at 26.8 meters; ArmorBonus #111 (Armor) at 26.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 47.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: yes. Ammo: 14.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1330,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 101 health and 6 armor.\nInventory: melee with 0 ammo; pistol with 47 ammo; shotgun with 10 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #104 (Weapon) at 3.2 meters; Shell #92 (Ammo) at 11.1 meters; Shell #106 (Ammo) at 11.9 meters; HealthBonus #90 (Health) at 12.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_104": "Collect Shotgun #104 (Weapon), 3.2m away. ",
+        "collect_92": "Collect Shell #92 (Ammo), 11.1m away. ",
+        "collect_106": "Collect Shell #106 (Ammo), 11.9m away. ",
+        "collect_90": "Collect HealthBonus #90 (Health), 12.6m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224156_715030_paired-typed-decisions-44",
+    "source_tick": 1162,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 30 ammo.\nHostile enemies in sight: Zombieman #70 at 10.8 meters.\nObserved ground items: Shell #65 (Ammo) at 6.5 meters; Stimpack #64 (Health) at 7.2 meters; Shotgun #10 (Weapon) at 10.9 meters; Clip #30 (Ammo) at 13.8 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "shoot_70": "Fight Zombieman #70, 10.8m away.",
+        "collect_65": "Collect Shell #65 (Ammo), 6.5m away. ",
+        "collect_64": "Collect Stimpack #64 (Health), 7.2m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 10.9m away. ",
+        "collect_30": "Collect Clip #30 (Ammo), 13.8m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "retreat": "Back away from the enemies without firing.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "shoot_70",
+    "kind": "command",
+    "category": "attack",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 658,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #110 (Ammo) at 3.2 meters; Shotgun #99 (Weapon) at 3.8 meters; HealthBonus #74 (Health) at 4.3 meters; HealthBonus #73 (Health) at 5.5 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 40.",
+        "shotgun": "Powerful ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 1.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "shotgun",
+    "kind": "weapon",
+    "category": "shotgun",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1064,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 92 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 25 ammo; shotgun with 4 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Stimpack #64 (Health) at 4.1 meters; Shell #65 (Ammo) at 4.5 meters; Shotgun #10 (Weapon) at 13.3 meters; Clip #8 (Ammo) at 13.9 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_64": "Collect Stimpack #64 (Health), 4.1m away. ",
+        "collect_65": "Collect Shell #65 (Ammo), 4.5m away. ",
+        "collect_10": "Collect Shotgun #10 (Weapon), 13.3m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 13.9m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_65",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 840,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 97 health and 1 armor.\nInventory: melee with 0 ammo; pistol with 46 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Clip #36 (Ammo) at 4.6 meters; GreenArmor #32 (Armor) at 7.1 meters; ArmorBonus #18 (Armor) at 10.8 meters; Clip #8 (Ammo) at 11.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_36": "Collect Clip #36 (Ammo), 4.6m away. ",
+        "collect_32": "Collect GreenArmor #32 (Armor), 7.1m away. ",
+        "collect_18": "Collect ArmorBonus #18 (Armor), 10.8m away. ",
+        "collect_8": "Collect Clip #8 (Ammo), 11.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "collect_32",
+    "kind": "command",
+    "category": "pickup",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 322,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 50 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: HealthBonus #1 (Health) at 12.1 meters; HealthBonus #2 (Health) at 13.6 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Choose an effective weapon. Use a loaded gun for ranged enemies. Prefer shotgun to pistol when both are loaded. Use melee when there is no usable gun.",
+      "criteria": {
+        "melee": "Melee only, range 1.5m. Loaded: yes. Can hit visible enemies from here: no. Ammo: 0.",
+        "pistol": "Basic ranged gun. Loaded: yes. Can hit visible enemies from here: no. Ammo: 50.",
+        "keep": "Keep the current weapon."
+      }
+    },
+    "label": "pistol",
+    "kind": "weapon",
+    "category": "pistol",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 56,
+    "synthetic": false
+  },
+  {
+    "state": "The player has 100 health and 0 armor.\nInventory: melee with 0 ammo; pistol with 40 ammo; shotgun with 1 ammo.\nThe area in sight is clear of enemies.\nObserved ground items: Shotgun #99 (Weapon) at 3.5 meters; HealthBonus #74 (Health) at 4.0 meters; HealthBonus #73 (Health) at 4.4 meters; HealthBonus #72 (Health) at 5.2 meters.",
+    "question": {
+      "type": "choice",
+      "instructions": "Finish the level alive. Fight visible threats, get needed supplies, open blocking doors, reach exit. Avoid unreachable targets and unnecessary detours.",
+      "criteria": {
+        "collect_99": "Collect Shotgun #99 (Weapon), 3.5m away. ",
+        "collect_74": "Collect HealthBonus #74 (Health), 4.0m away. ",
+        "collect_73": "Collect HealthBonus #73 (Health), 4.4m away. ",
+        "collect_72": "Collect HealthBonus #72 (Health), 5.2m away. ",
+        "exit": "No immediate threat or needed supplies: reach the exit to complete the level.",
+        "explore": "Search unknown areas when the current route is blocked.",
+        "wait": "Stay still without firing."
+      }
+    },
+    "label": "exit",
+    "kind": "command",
+    "category": "exit",
+    "source_run": "20260921_224245_796456_paired-jev-44",
+    "source_tick": 1050,
+    "synthetic": false
+  }
+]

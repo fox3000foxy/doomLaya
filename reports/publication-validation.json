@@ -1,0 +1,98 @@
+{
+  "unit": {
+    "passed": true
+  },
+  "publication": {
+    "passed": true
+  },
+  "data-v1": {
+    "passed": true
+  },
+  "data-v3": {
+    "passed": true
+  },
+  "training-smoke": {
+    "passed": true
+  },
+  "packaged-model-health": {
+    "passed": true,
+    "weights_sha256": "bb9083189517c5dc5c0e357062446df2ea73eadc3d909ec6ec7a6cee222a6147"
+  },
+  "game-smoke": {
+    "passed": true,
+    "seconds": 5.0,
+    "model_requests": 10,
+    "model_errors": 0,
+    "full_level_test": false
+  },
+  "game-authority": {
+    "passed": true
+  },
+  "clean_environment": {
+    "python": "3.12.8",
+    "platform": "macOS",
+    "device": "mps",
+    "install": "uv pip install -r requirements-lock.txt -r requirements-model.txt",
+    "passed": true
+  },
+  "ci": {
+    "configured": true,
+    "remote_run": false
+  },
+  "scope": {
+    "training": "one real optimizer step on two questions, not full retraining",
+    "game": "five seconds and ten model replies, not a new level-completion result"
+  },
+  "editorial_review": {
+    "skill": "infostyle",
+    "skill_source": "https://github.com/azalio/infostyle-skill",
+    "skill_revision": "8477919552ff47e581ef57d192b571fb210b3a61",
+    "independent_review": "PASS after two rounds",
+    "checks": [
+      {
+        "file": "README.md",
+        "score": 100.0,
+        "passed": true
+      },
+      {
+        "file": "TRAINING.md",
+        "score": 100.0,
+        "passed": true
+      },
+      {
+        "file": "PUBLISHING.md",
+        "score": 100.0,
+        "passed": true
+      },
+      {
+        "file": "COMPARISON.md",
+        "score": 100.0,
+        "passed": true
+      },
+      {
+        "file": "DOOM.md",
+        "score": 100.0,
+        "passed": true
+      },
+      {
+        "file": "CLAUDE.md",
+        "score": 100.0,
+        "passed": true
+      },
+      {
+        "file": "model-card/README.md",
+        "score": 100.0,
+        "passed": true
+      }
+    ],
+    "words_before": 3759,
+    "words_after": 3970,
+    "protected_content": "Command blocks, tables, links, model front matter and measured results preserved",
+    "scope": "Russian public documents and report HTML prose. English release notes and legal texts preserved.",
+    "suppressions": {
+      "TRAINING.md F7": "Laya and FreeDoom are proper names",
+      "README.md R1": "Separate facts about network time and video synchronization; no rhythm defect"
+    },
+    "model_bundle": "Updated model card, verified SHA256SUMS and tar checksum; weights unchanged"
+  }
+}
