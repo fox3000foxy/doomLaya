@@ -9,7 +9,7 @@ import unittest
 from pathlib import Path
 from scripts.package_model import REQUIRED, package
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublicationTest(unittest.TestCase):
@@ -17,7 +17,7 @@ class PublicationTest(unittest.TestCase):
         import runpy
         import sys
         from unittest.mock import patch
-        for name in ("agent.py", "verify_run.py", "run_comparison.py", "render_comparison.py", "serve_doom_laya.py", "training/finetune.py"):
+        for name in ("agent.py", "tools/verify_run.py", "tools/run_comparison.py", "tools/render_comparison.py", "serve_doom_laya.py", "training/finetune.py"):
             with self.subTest(name=name), patch.object(sys, "argv", [name, "--help"]), contextlib.redirect_stdout(io.StringIO()):
                 with self.assertRaises(SystemExit) as result:
                     runpy.run_path(str(ROOT / name), run_name="__main__")

@@ -99,8 +99,8 @@ In another terminal:
 ```bash
 .venv/bin/python agent.py --model doom-adapted --seed 48 \
   --seconds 180 --record auto --show --stop-after-level
-.venv/bin/python check_authority.py runs/<printed-run>
-.venv/bin/python verify_run.py runs/<printed-run>
+.venv/bin/python -m tools.check_authority runs/<printed-run>
+.venv/bin/python -m tools.verify_run runs/<printed-run>
 ```
 
 The check requires an engine-confirmed MAP01 completion plus three seconds of MAP02.

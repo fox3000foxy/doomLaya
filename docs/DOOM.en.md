@@ -12,7 +12,7 @@ aim precision, traversable-path search, stuck detection and feedback.
 For new behavior, the negative case is checked first: a `wait`
 or `exit` command with a visible monster must not allow ATTACK; `exit` in front of a door must not
 allow USE on that door; a missing response must not allow movement.
-`test_authority.py` and `check_authority.py` guard this boundary.
+`tests/test_authority.py` and `tools/check_authority.py` guard this boundary.
 
 The same client and motor-executor code is mandatory for comparing models.
 Exact questions, answers, sources and hashes are stored with every run.

@@ -3,7 +3,7 @@ from pathlib import Path
 import subprocess
 
 from PIL import Image, ImageDraw, ImageFont
-from combat import WEAPON_NAMES
+from doomlib.combat import WEAPON_NAMES
 
 COLORS = ['#ffad66', '#6bdacb', '#79adff', '#d6a1ff', '#ffd670', '#78d49c', '#ff8392', '#bfc8dd']
 

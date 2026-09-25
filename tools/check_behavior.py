@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
-from items import utility
+from doomlib.items import utility
 
 
 def analyze(rows):

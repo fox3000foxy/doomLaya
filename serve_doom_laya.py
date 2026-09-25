@@ -9,7 +9,7 @@ import json
 import threading
 import time
 from pathlib import Path
-from laya_runtime import BASE_REPO, BASE_REVISION, LAYA_SOURCE_COMMIT, base_checkpoint, choose_device
+from doomlib.laya_runtime import BASE_REPO, BASE_REVISION, LAYA_SOURCE_COMMIT, base_checkpoint, choose_device
 
 
 def main():

@@ -99,8 +99,8 @@ weight decay 0.01, ограничение нормы градиента (clip gr
 ```bash
 .venv/bin/python agent.py --model doom-adapted --seed 48 \
   --seconds 180 --record auto --show --stop-after-level
-.venv/bin/python check_authority.py runs/<напечатанный-run>
-.venv/bin/python verify_run.py runs/<напечатанный-run>
+.venv/bin/python -m tools.check_authority runs/<напечатанный-run>
+.venv/bin/python -m tools.verify_run runs/<напечатанный-run>
 ```
 
 Проверка требует подтверждённого движком завершения MAP01 и трёх секунд MAP02.

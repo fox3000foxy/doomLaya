@@ -1,6 +1,6 @@
 """Observation-to-question formatting; only model responses select commands."""
 import math
-from combat import WEAPON_NAMES
+from doomlib.combat import WEAPON_NAMES
 
 ACTIONS={k:k for k in ('attack','pickup','open_door','exit','retreat','explore','wait')}
 WEAPON_DESCRIPTIONS={1:'Fists: melee, no ammunition needed.',2:'Pistol: use only when stronger guns have no ammo.',3:'Shotgun: prefer this powerful gun to the pistol when shells are available.',

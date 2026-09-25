@@ -17,14 +17,14 @@ import numpy as np
 import requests
 import vizdoom as vzd
 
-from overlay import Overlay, Recorder
-from navigation import Navigator
-from combat import Combat, WEAPON_NAMES
-from items import Items
-from mission import Mission, map_data
-from report import build_report
-from executor import Executor
-from policy import request as policy_request, decode as policy_decode, ACTIONS
+from doomlib.overlay import Overlay, Recorder
+from doomlib.navigation import Navigator
+from doomlib.combat import Combat, WEAPON_NAMES
+from doomlib.items import Items
+from doomlib.mission import Mission, map_data
+from doomlib.report import build_report
+from doomlib.executor import Executor
+from doomlib.policy import request as policy_request, decode as policy_decode, ACTIONS
 
 ROOT = Path(__file__).resolve().parent
 TICRATE = 35

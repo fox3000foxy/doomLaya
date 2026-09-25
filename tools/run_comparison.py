@@ -3,7 +3,7 @@ import argparse,hashlib,json,signal,subprocess,sys
 from datetime import datetime
 from pathlib import Path
 from diagnostics.verify_model_run import verify
-from summarize_authority import summarize
+from tools.summarize_authority import summarize
 
 p=argparse.ArgumentParser();p.add_argument('--seed',type=int,default=48);p.add_argument('--seconds',type=int,default=180)
 p.add_argument('--models',nargs='+',default=['doom-adapted','typed-decisions','jev'],choices=['doom-adapted','typed-decisions','jev'])

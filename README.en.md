@@ -123,7 +123,7 @@ For three sequential runs, start both local servers
 (original on 8000, adaptation on 8001), then:
 
 ```bash
-.venv/bin/python run_comparison.py --seed 48 --seconds 180
+.venv/bin/python -m tools.run_comparison --seed 48 --seconds 180
 ```
 
 In the `SUITE` line the script prints the results directory. The path of each run
@@ -132,9 +132,9 @@ API errors have no fallback strategy. If the player did not finish the level, th
 even if the executor correctly carried out all model commands.
 
 ```bash
-.venv/bin/python render_comparison.py runs/<laya-run> runs/<jev-run> \
+.venv/bin/python -m tools.render_comparison runs/<laya-run> runs/<jev-run> \
   --output runs/laya-vs-jev.mp4
-.venv/bin/python measure_network.py runs/network.json
+.venv/bin/python -m tools.measure_network runs/network.json
 ```
 
 The video shows two windows: HP, ammo, kills, command, target, weapon,
@@ -165,10 +165,10 @@ After a real MAP01 completion, MAP02 starts with a standard inventory;
 ## Verification
 
 ```bash
-.venv/bin/python -m unittest test_authority.py test_publication.py
+.venv/bin/python -m unittest tests.test_authority tests.test_publication
 .venv/bin/python scripts/check_publication.py
-.venv/bin/python check_authority.py runs/<run>
-.venv/bin/python verify_run.py runs/<run>
+.venv/bin/python -m tools.check_authority runs/<run>
+.venv/bin/python -m tools.verify_run runs/<run>
 ```
 
 Each recording keeps requests/responses, events, per-frame telemetry,

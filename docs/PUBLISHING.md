@@ -34,7 +34,7 @@ Hugging Face предоставляет публичное хранилище п
 ## 1. Проверить исходники
 
 ```bash
-.venv/bin/python -m unittest test_authority.py test_publication.py
+.venv/bin/python -m unittest tests.test_authority tests.test_publication
 .venv/bin/python scripts/check_publication.py
 git diff --cached --stat
 ```

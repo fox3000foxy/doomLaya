@@ -121,7 +121,7 @@ chmod 600 .env
 (исходный на 8000, адаптацию на 8001), затем:
 
 ```bash
-.venv/bin/python run_comparison.py --seed 48 --seconds 180
+.venv/bin/python -m tools.run_comparison --seed 48 --seconds 180
 ```
 
 В строке `SUITE` скрипт выведет каталог результатов. Путь к каждому прогону
@@ -130,9 +130,9 @@ chmod 600 .env
 даже если исполнитель правильно выполнил все команды модели.
 
 ```bash
-.venv/bin/python render_comparison.py runs/<laya-run> runs/<jev-run> \
+.venv/bin/python -m tools.render_comparison runs/<laya-run> runs/<jev-run> \
   --output runs/laya-vs-jev.mp4
-.venv/bin/python measure_network.py runs/network.json
+.venv/bin/python -m tools.measure_network runs/network.json
 ```
 
 В видео два окна: видны HP, патроны, убийства, команда, цель, оружие,
@@ -163,10 +163,10 @@ chmod 600 .env
 ## Проверка
 
 ```bash
-.venv/bin/python -m unittest test_authority.py test_publication.py
+.venv/bin/python -m unittest tests.test_authority tests.test_publication
 .venv/bin/python scripts/check_publication.py
-.venv/bin/python check_authority.py runs/<run>
-.venv/bin/python verify_run.py runs/<run>
+.venv/bin/python -m tools.check_authority runs/<run>
+.venv/bin/python -m tools.verify_run runs/<run>
 ```
 
 В каждой записи сохраняются запросы/ответы, события, покадровая телеметрия,

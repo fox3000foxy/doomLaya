@@ -102,8 +102,8 @@ Longest out-of-combat stop — 1.63 s;
 in-place direction changes — at most
 2 per second.
 
-`check_authority.py` matches each frame's buttons against the accepted model response.
-`verify_run.py` additionally checks the engine-confirmed MAP02 transition, video,
+`tools/check_authority.py` matches each frame's buttons against the accepted model response.
+`tools/verify_run.py` additionally checks the engine-confirmed MAP02 transition, video,
 tick continuity, game speed and navigation limits. The Laya v3 and Jev runs
 passed the check; the original Laya run got FAIL. All sources and hashes are stored
 in the run's `source/` directory.

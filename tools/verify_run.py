@@ -10,8 +10,8 @@ import struct
 import vizdoom
 import sys
 
-from check_navigation import analyze
-from check_behavior import analyze as analyze_behavior
+from tools.check_navigation import analyze
+from tools.check_behavior import analyze as analyze_behavior
 
 
 def verify(root, expected_seconds=None):
