@@ -314,12 +314,12 @@ def main():
     config = {'args': vars(args), 'wad_sha256':hashlib.sha256((Path(vzd.__file__).parent/'freedoom2.wad').read_bytes()).hexdigest(), 'protocol':'model-authority-v1', 'questions':'dynamic; exact request in decisions.jsonl', 'laya_health': health,
               'vizdoom': vzd.__version__, 'tics_per_second': TICRATE,
               'command_ttl_seconds':2, 'automatic_weapon_pickup_switch':False,
-              'source_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
-                                for name in ['agent.py', 'overlay.py', 'report.py', 'navigation.py', 'combat.py', 'items.py', 'mission.py', 'policy.py', 'executor.py']}}
+               'source_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+                                 for name in ['agent.py', 'doomlib/overlay.py', 'doomlib/report.py', 'doomlib/navigation.py', 'doomlib/combat.py', 'doomlib/items.py', 'doomlib/mission.py', 'doomlib/policy.py', 'doomlib/executor.py']}}
     if health.get('laya_source_commit'):
         config['laya_source_commit'] = health['laya_source_commit']
     (run/'source').mkdir()
-    for name in config['source_sha256']:(run/'source'/name).write_bytes((ROOT/name).read_bytes())
+    for name in config['source_sha256']:(run/'source'/name).parent.mkdir(parents=True,exist_ok=True);(run/'source'/name).write_bytes((ROOT/name).read_bytes())
     (run / 'config.json').write_text(json.dumps(config, ensure_ascii=False, indent=2))
     print(f'RUN {run}', flush=True)
     handles = {name: (run / f'{name}.jsonl').open('x') for name in ['decisions', 'telemetry', 'events']}
