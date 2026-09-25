@@ -4,13 +4,13 @@ import math
 import json
 from pathlib import Path
 import unittest
-from executor import Executor
-from navigation import Navigator
-from policy import request as policy_request
-from mission import map_data
+from doomlib.executor import Executor
+from doomlib.navigation import Navigator
+from doomlib.policy import request as policy_request
+from doomlib.mission import map_data
 import vizdoom
 
-SAMPLE=json.loads((Path(__file__).resolve().parent/'fixtures/authority-state.json').read_text())
+SAMPLE=json.loads((Path(__file__).resolve().parents[1]/'fixtures/authority-state.json').read_text())
 
 class Motor:
     def observe(self,*args):pass

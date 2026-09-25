@@ -4,7 +4,10 @@ import argparse
 import json
 from pathlib import Path
 
-from items import utility
+from doomlib.items import utility
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 
 def analyze(rows):

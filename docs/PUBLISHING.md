@@ -1,5 +1,7 @@
 # Публикация кода, весов и видео
 
+[English](PUBLISHING.en.md) · Русский
+
 Рекомендуемая схема: **GitHub — код, данные обучения и отчёт;
 Hugging Face — модель; GitHub Releases — видео и при желании архив весов.**
 Скрипты подготовки создают локальные файлы. Загрузка на сервисы описана отдельно
@@ -32,7 +34,7 @@ Hugging Face предоставляет публичное хранилище п
 ## 1. Проверить исходники
 
 ```bash
-.venv/bin/python -m unittest test_authority.py test_publication.py
+.venv/bin/python -m unittest tests.test_authority tests.test_publication
 .venv/bin/python scripts/check_publication.py
 git diff --cached --stat
 ```
@@ -107,7 +109,7 @@ gh release create v0.1.0 \
 
 Если веса размещены только на Hugging Face, уберите два `dist/` аргумента.
 Видео существуют в исходной рабочей папке автора; в свежем clone их нет.
-Сверить SHA-256 можно по [reports/video-verification.json](reports/video-verification.json).
+Сверить SHA-256 можно по [reports/video-verification.json](../reports/video-verification.json).
 После публикации добавьте ссылки на файлы релиза в README и COMPARISON.
 
 ## 5. Скачать опубликованные веса на другой машине
@@ -133,5 +135,5 @@ gh release download v0.1.0 --repo azalio/doomLaya \
 tar -xf dist/laya-doom-v3.tar -C checkpoints
 ```
 
-Затем запускайте сервер по [README](README.md). Чтобы обучить собственную модель,
+Затем запускайте сервер по [README](../README.md). Чтобы обучить собственную модель,
 используйте [TRAINING.md](TRAINING.md).

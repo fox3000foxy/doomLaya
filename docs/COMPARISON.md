@@ -1,9 +1,11 @@
 # Laya и Jev: решения принадлежат моделям
 
+[English](COMPARISON.en.md) · Русский
+
 [Видео: Laya v3 и Jev](https://github.com/azalio/doomLaya/releases/download/v0.1.0/laya-vs-jev.mp4) ·
 [Видео: исходная Laya и Jev](https://github.com/azalio/doomLaya/releases/download/v0.1.0/original-laya-vs-jev.mp4).
 [Модель на Hugging Face](https://huggingface.co/azalio/laya-doom-v3) · [Релиз с архивом весов](https://github.com/azalio/doomLaya/releases/tag/v0.1.0).
-[Публикация и скачивание](PUBLISHING.md) · [Сводка измерений](reports/comparison.json)
+[Публикация и скачивание](PUBLISHING.md) · [Сводка измерений](../reports/comparison.json)
 
 На MAP01, skill 3, seed 48 исходная Laya не закончила
 уровень за 180 секунд. После адаптации Laya прошла уровень за 61.43 с,
@@ -58,7 +60,7 @@ Laya v3 115 мс, Jev 371 мс.
 HTTP без инференса 110.6 мс.
 TCP оценивает RTT до края сервиса, не до GPU провайдера. Вычитание HTTP без
 инференса из игрового запроса не даёт точного времени вычисления модели.
-[Сырые сетевые измерения](reports/network.json).
+[Сырые сетевые измерения](../reports/network.json).
 
 Во всех трёх итоговых запусках время по часам (wall time) совпало
 с игровым временем (game time). Ранний прогон,
@@ -101,13 +103,13 @@ shells +8.
 смена направления на месте — максимум
 2 раза/с.
 
-`check_authority.py` сопоставляет кнопки каждого кадра с принятым ответом модели.
-`verify_run.py` дополнительно проверяет подтверждённый движком переход на MAP02, видео,
+`tools/check_authority.py` сопоставляет кнопки каждого кадра с принятым ответом модели.
+`tools/verify_run.py` дополнительно проверяет подтверждённый движком переход на MAP02, видео,
 непрерывность тиков, скорость игры и навигационные пределы. Прогоны Laya v3 и Jev
 прошли проверку; прогон исходной Laya получил FAIL. Все исходники и хеши сохранены
 в `source/` соответствующего прогона.
 
-[Машинная сводка](reports/comparison.json) · [Команды воспроизведения](README.md).
+[Машинная сводка](../reports/comparison.json) · [Команды воспроизведения](../README.md).
 
 Старый результат с шестью победами общего стратегического контроллера сохранён
 в `archive/controller-baseline/` и `runs/20260921_223707_paired-levels/`.

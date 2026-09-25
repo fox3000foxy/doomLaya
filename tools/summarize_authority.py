@@ -1,7 +1,10 @@
 """Summarize model-owned gameplay, latency, cost and the integrity/acceptance distinction."""
-import argparse,collections,json,statistics
+import argparse,collections,json
 from pathlib import Path
 import numpy as np
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 
 def summarize(paths):

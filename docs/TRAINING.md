@@ -1,5 +1,7 @@
 # Обучение Laya для FreeDoom <!-- slop-ignore F7 -->
 
+[English](TRAINING.en.md) · Русский
+
 Скрипт сохраняет обученную модель в отдельный каталог — checkpoint.
 Исходные веса Laya не перезаписываются. Обучение идёт по заранее размеченным
 примерам: метки задают игровые правила, а во время игры решения принимает модель.
@@ -16,7 +18,7 @@ uv pip install --python .venv/bin/python -r requirements-lock.txt -r requirement
 ```
 
 JSON с обучающими примерами включены в репозиторий. Их версии зафиксированы,
-поэтому для повторения обучения старые игровые записи не нужны. Хеши и происхождение — [training/datasets.json](training/datasets.json).
+поэтому для повторения обучения старые игровые записи не нужны. Хеши и происхождение — [training/datasets.json](../training/datasets.json).
 
 | Этап | Train, вопросов | Validation, вопросов | Игровые seed |
 |---|---:|---:|---|
@@ -97,8 +99,8 @@ weight decay 0.01, ограничение нормы градиента (clip gr
 ```bash
 .venv/bin/python agent.py --model doom-adapted --seed 48 \
   --seconds 180 --record auto --show --stop-after-level
-.venv/bin/python check_authority.py runs/<напечатанный-run>
-.venv/bin/python verify_run.py runs/<напечатанный-run>
+.venv/bin/python -m tools.check_authority runs/<напечатанный-run>
+.venv/bin/python -m tools.verify_run runs/<напечатанный-run>
 ```
 
 Проверка требует подтверждённого движком завершения MAP01 и трёх секунд MAP02.

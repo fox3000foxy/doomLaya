@@ -10,21 +10,20 @@ import os
 from pathlib import Path
 import re
 import statistics
-import subprocess
 import time
 
 import numpy as np
 import requests
 import vizdoom as vzd
 
-from overlay import Overlay, Recorder
-from navigation import Navigator
-from combat import Combat, WEAPON_NAMES
-from items import Items
-from mission import Mission, map_data
-from report import build_report
-from executor import Executor
-from policy import request as policy_request, decode as policy_decode, ACTIONS
+from doomlib.overlay import Overlay, Recorder
+from doomlib.mission import Mission, map_data
+from doomlib.report import build_report
+from doomlib.executor import Executor
+from doomlib.policy import request as policy_request, decode as policy_decode, ACTIONS
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 ROOT = Path(__file__).resolve().parent
 TICRATE = 35
@@ -315,12 +314,12 @@ def main():
     config = {'args': vars(args), 'wad_sha256':hashlib.sha256((Path(vzd.__file__).parent/'freedoom2.wad').read_bytes()).hexdigest(), 'protocol':'model-authority-v1', 'questions':'dynamic; exact request in decisions.jsonl', 'laya_health': health,
               'vizdoom': vzd.__version__, 'tics_per_second': TICRATE,
               'command_ttl_seconds':2, 'automatic_weapon_pickup_switch':False,
-              'source_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
-                                for name in ['agent.py', 'overlay.py', 'report.py', 'navigation.py', 'combat.py', 'items.py', 'mission.py', 'policy.py', 'executor.py']}}
+               'source_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
+                                 for name in ['agent.py', 'doomlib/__init__.py', 'doomlib/overlay.py', 'doomlib/report.py', 'doomlib/navigation.py', 'doomlib/combat.py', 'doomlib/items.py', 'doomlib/mission.py', 'doomlib/policy.py', 'doomlib/executor.py']}}
     if health.get('laya_source_commit'):
         config['laya_source_commit'] = health['laya_source_commit']
     (run/'source').mkdir()
-    for name in config['source_sha256']:(run/'source'/name).write_bytes((ROOT/name).read_bytes())
+    for name in config['source_sha256']:(run/'source'/name).parent.mkdir(parents=True,exist_ok=True);(run/'source'/name).write_bytes((ROOT/name).read_bytes())
     (run / 'config.json').write_text(json.dumps(config, ensure_ascii=False, indent=2))
     print(f'RUN {run}', flush=True)
     handles = {name: (run / f'{name}.jsonl').open('x') for name in ['decisions', 'telemetry', 'events']}
@@ -496,6 +495,8 @@ def main():
     except KeyboardInterrupt:
         status = 'interrupted'
     except Exception as exc:
+        import traceback
+        traceback.print_exc()  # <-- ajout temporaire pour debug
         fatal = type(exc).__name__ + ': ' + (str(exc) if isinstance(exc, RuntimeError) else 'see events')
         status = 'failed'
         event('fatal', total_ticks, error_type=type(exc).__name__)

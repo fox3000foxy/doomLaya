@@ -1,9 +1,12 @@
 """Run original Laya, adapted Laya and Jev with identical gameplay settings."""
-import argparse,hashlib,json,signal,subprocess,sys
+import argparse,json,signal,subprocess,sys
 from datetime import datetime
 from pathlib import Path
 from diagnostics.verify_model_run import verify
-from summarize_authority import summarize
+from tools.summarize_authority import summarize
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 p=argparse.ArgumentParser();p.add_argument('--seed',type=int,default=48);p.add_argument('--seconds',type=int,default=180)
 p.add_argument('--models',nargs='+',default=['doom-adapted','typed-decisions','jev'],choices=['doom-adapted','typed-decisions','jev'])
@@ -17,7 +20,7 @@ for model in a.models:
   try:code=process.wait()
   except KeyboardInterrupt:
    process.send_signal(signal.SIGINT);process.wait(timeout=30);raise
- lines=log.read_text().splitlines()
+ lines=log.read_text(encoding='utf-8').splitlines()
  marker=next((line[4:] for line in lines if line.startswith('RUN ')),None)
  if marker is None:raise RuntimeError(f'{model} failed before game start; inspect {log}')
  run=Path(marker)

@@ -5,8 +5,11 @@ from pathlib import Path
 import subprocess
 
 from PIL import Image,ImageDraw
-from overlay import font
-from combat import WEAPON_NAMES
+from doomlib.overlay import font
+from doomlib.combat import WEAPON_NAMES
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 
 class Replay:

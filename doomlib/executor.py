@@ -1,7 +1,7 @@
 """Execute explicit model commands; no combat, item or weapon preference policy."""
 import math
-from navigation import Navigator
-from combat import target_bearing
+from doomlib.navigation import Navigator
+from doomlib.combat import target_bearing
 
 
 class Executor:

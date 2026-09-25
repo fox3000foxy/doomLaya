@@ -1,10 +1,12 @@
 # doomLaya
 
+[English](README.en.md) · Русский
+
 Laya и Jev играют в FreeDoom. Модель выбирает действие, цель и оружие;
 контроллер строит маршрут, целится и нажимает кнопки по её команде.
 
-[Обучение](TRAINING.md) · [Результаты](COMPARISON.md) ·
-[Веса и публикация](PUBLISHING.md) · [Контракт управления](DOOM.md)
+[Обучение](docs/TRAINING.md) · [Результаты](docs/COMPARISON.md) ·
+[Веса и публикация](docs/PUBLISHING.md) · [Контракт управления](docs/DOOM.md)
 
 ## Проверенный результат
 
@@ -27,7 +29,7 @@ Laya и Jev играют в FreeDoom. Модель выбирает действ
 [Видео: Laya v3 и Jev](https://github.com/azalio/doomLaya/releases/download/v0.1.0/laya-vs-jev.mp4) ·
 [Видео: исходная Laya и Jev](https://github.com/azalio/doomLaya/releases/download/v0.1.0/original-laya-vs-jev.mp4) ·
 [Модель на Hugging Face](https://huggingface.co/azalio/laya-doom-v3) · [Архив весов](https://github.com/azalio/doomLaya/releases/tag/v0.1.0).
-Команды скачивания — в [PUBLISHING.md](PUBLISHING.md).
+Команды скачивания — в [PUBLISHING.md](docs/PUBLISHING.md).
 
 ## Установка
 
@@ -79,8 +81,8 @@ uv pip install --python .venv/bin/python -r requirements-model.txt
 (cd checkpoints/laya-doom-v3 && shasum -a 256 -c SHA256SUMS)
 ```
 
-Другие варианты: [архив из GitHub Release](PUBLISHING.md) или
-[обучение своей модели](TRAINING.md). Команда `git clone` скачивает исходники без весов.
+Другие варианты: [архив из GitHub Release](docs/PUBLISHING.md) или
+[обучение своей модели](docs/TRAINING.md). Команда `git clone` скачивает исходники без весов.
 
 ```bash
 .venv/bin/python serve_doom_laya.py \
@@ -119,7 +121,7 @@ chmod 600 .env
 (исходный на 8000, адаптацию на 8001), затем:
 
 ```bash
-.venv/bin/python run_comparison.py --seed 48 --seconds 180
+.venv/bin/python -m tools.run_comparison --seed 48 --seconds 180
 ```
 
 В строке `SUITE` скрипт выведет каталог результатов. Путь к каждому прогону
@@ -128,9 +130,9 @@ chmod 600 .env
 даже если исполнитель правильно выполнил все команды модели.
 
 ```bash
-.venv/bin/python render_comparison.py runs/<laya-run> runs/<jev-run> \
+.venv/bin/python -m tools.render_comparison runs/<laya-run> runs/<jev-run> \
   --output runs/laya-vs-jev.mp4
-.venv/bin/python measure_network.py runs/network.json
+.venv/bin/python -m tools.measure_network runs/network.json
 ```
 
 В видео два окна: видны HP, патроны, убийства, команда, цель, оружие,
@@ -161,10 +163,10 @@ chmod 600 .env
 ## Проверка
 
 ```bash
-.venv/bin/python -m unittest test_authority.py test_publication.py
+.venv/bin/python -m unittest tests.test_authority tests.test_publication
 .venv/bin/python scripts/check_publication.py
-.venv/bin/python check_authority.py runs/<run>
-.venv/bin/python verify_run.py runs/<run>
+.venv/bin/python -m tools.check_authority runs/<run>
+.venv/bin/python -m tools.verify_run runs/<run>
 ```
 
 В каждой записи сохраняются запросы/ответы, события, покадровая телеметрия,

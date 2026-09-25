@@ -15,4 +15,4 @@ The model archive contains Apache-2.0, attribution, a model card and SHA256SUMS.
 Verify laya-doom-v3.tar.sha256 before extracting the archive into checkpoints/.
 
 Model: https://huggingface.co/azalio/laya-doom-v3
-Training guide: https://github.com/azalio/doomLaya/blob/main/TRAINING.md
+Training guide: https://github.com/azalio/doomLaya/blob/main/docs/TRAINING.md
