@@ -3,6 +3,9 @@ import argparse
 import html
 import json
 from pathlib import Path
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 
 def build_report(directory):

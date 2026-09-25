@@ -5,6 +5,9 @@ import argparse,collections,hashlib,json,random,shutil,time,sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from doomlib.laya_runtime import base_checkpoint,choose_device,BASE_REPO,BASE_REVISION,LAYA_SOURCE_COMMIT
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 p=argparse.ArgumentParser();p.add_argument('--epochs',type=int,default=4);p.add_argument('--output',default='checkpoints/laya-doom-head-v1');p.add_argument('--base');p.add_argument('--lr',type=float,default=3e-5);p.add_argument('--encoder-last',type=int,default=0);p.add_argument('--data',default='training');p.add_argument('--device',choices=['auto','cpu','mps','cuda'],default='auto');p.add_argument('--validate-only',action='store_true');a=p.parse_args()
 if a.epochs<1 or a.lr<=0 or not 0<=a.encoder_last<=28:p.error('epochs/lr must be positive; encoder-last must be in 0..28')

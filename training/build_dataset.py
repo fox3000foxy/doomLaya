@@ -6,6 +6,9 @@ from doomlib.policy import request
 from doomlib.executor import Executor
 from doomlib.items import utility
 from doomlib.mission import Mission,map_data
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 import vizdoom
 
 parser=argparse.ArgumentParser();parser.add_argument('--output-dir',default='training/v3');parser.add_argument('--runs-dir',type=Path,default=Path('runs'));parser.add_argument('--sources',type=Path,help='JSON mapping train/validation to run folder names');args=parser.parse_args()

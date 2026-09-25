@@ -12,6 +12,9 @@ import sys
 
 from tools.check_navigation import analyze
 from tools.check_behavior import analyze as analyze_behavior
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 
 def verify(root, expected_seconds=None):

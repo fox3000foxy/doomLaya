@@ -25,6 +25,9 @@ from doomlib.mission import Mission, map_data
 from doomlib.report import build_report
 from doomlib.executor import Executor
 from doomlib.policy import request as policy_request, decode as policy_decode, ACTIONS
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 ROOT = Path(__file__).resolve().parent
 TICRATE = 35

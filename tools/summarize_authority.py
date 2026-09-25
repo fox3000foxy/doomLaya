@@ -2,6 +2,9 @@
 import argparse,collections,json,statistics
 from pathlib import Path
 import numpy as np
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 
 def summarize(paths):

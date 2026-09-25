@@ -1,6 +1,9 @@
 """Audit every non-idle motor frame against an accepted, unexpired model response."""
 import argparse,hashlib,json
 from pathlib import Path
+from doomlib import ensure_utf8_stdio
+
+ensure_utf8_stdio()
 
 def check(run):
  run=Path(run);cfg=json.loads((run/'config.json').read_text());summary=json.loads((run/'summary.json').read_text())
