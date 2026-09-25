@@ -3,10 +3,15 @@ import contextlib
 import io
 import hashlib
 import json
+import runpy
+import shutil
+import subprocess
+import sys
 import tarfile
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import Mock, patch
 from scripts.package_model import REQUIRED, package
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,14 +19,68 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class PublicationTest(unittest.TestCase):
     def test_public_entry_points_import_without_local_diagnostics(self):
-        import runpy
-        import sys
-        from unittest.mock import patch
         for name in ("agent.py", "tools/verify_run.py", "tools/run_comparison.py", "tools/render_comparison.py", "serve_doom_laya.py", "training/finetune.py"):
             with self.subTest(name=name), patch.object(sys, "argv", [name, "--help"]), contextlib.redirect_stdout(io.StringIO()):
                 with self.assertRaises(SystemExit) as result:
                     runpy.run_path(str(ROOT / name), run_name="__main__")
                 self.assertEqual(result.exception.code, 0)
+
+    def test_run_source_snapshot_imports_without_checkout(self):
+        import agent
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            shutil.copy2(ROOT / 'agent.py', root / 'agent.py')
+            shutil.copytree(ROOT / 'doomlib', root / 'doomlib',
+                            ignore=shutil.ignore_patterns('__pycache__'))
+            with patch.object(agent, 'ROOT', root), \
+                    patch.object(sys, 'argv', ['agent.py', '--dry']), \
+                    patch.object(agent, 'make_game', side_effect=KeyboardInterrupt), \
+                    contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(agent.main(), 0)
+            run = next((root / 'runs').iterdir())
+            snapshot = run / 'source'
+            result = subprocess.run(
+                [sys.executable, '-E', '-B', str(snapshot / 'agent.py'), '--help'],
+                cwd=snapshot, capture_output=True, text=True, encoding='utf-8', timeout=30,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            config = json.loads((run / 'config.json').read_text())
+            self.assertEqual(
+                config['source_sha256']['doomlib/__init__.py'],
+                hashlib.sha256((snapshot / 'doomlib/__init__.py').read_bytes()).hexdigest(),
+            )
+
+    def test_comparison_reads_unicode_run_path_with_windows_locale(self):
+        read_text = Path.read_text
+        for encoding in ('cp1251', 'cp1252'):
+            with self.subTest(encoding=encoding), tempfile.TemporaryDirectory() as tmp:
+                run = Path(tmp) / 'José_Иван'
+                run.mkdir()
+                (run / 'config.json').write_text(json.dumps({'source_sha256': {}}))
+
+                def launch(command, *, stdout, stderr):
+                    stdout.buffer.write(f'RUN {run}\n'.encode('utf-8'))
+                    stdout.flush()
+                    return Mock(wait=Mock(return_value=0))
+
+                def read_with_locale(path, *args, **kwargs):
+                    if path.suffix == '.log' and not args and kwargs.get('encoding') is None:
+                        kwargs['encoding'] = encoding
+                    return read_text(path, *args, **kwargs)
+
+                result = {'passed': True, 'experiment_valid': True, 'summary': {}}
+                with contextlib.chdir(tmp), \
+                        patch.object(sys, 'argv', ['run_comparison', '--models', 'doom-adapted']), \
+                        patch('subprocess.Popen', side_effect=launch), \
+                        patch.object(Path, 'read_text', read_with_locale), \
+                        patch('diagnostics.verify_model_run.verify', return_value=result) as verify, \
+                        patch('tools.summarize_authority.summarize', return_value={}), \
+                        contextlib.redirect_stdout(io.StringIO()):
+                    runpy.run_path(str(ROOT / 'tools/run_comparison.py'), run_name='__main__')
+                verify.assert_called_once_with(run)
+                entries = json.loads(next((Path(tmp) / 'runs').glob('*/runs.json')).read_text())
+                self.assertEqual(entries[0]['path'], str(run))
 
     def test_frozen_training_data_hashes_and_holdout(self):
         manifest = json.loads((ROOT / 'training/datasets.json').read_text())

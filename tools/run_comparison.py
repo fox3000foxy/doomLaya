@@ -20,7 +20,7 @@ for model in a.models:
   try:code=process.wait()
   except KeyboardInterrupt:
    process.send_signal(signal.SIGINT);process.wait(timeout=30);raise
- lines=log.read_text().splitlines()
+ lines=log.read_text(encoding='utf-8').splitlines()
  marker=next((line[4:] for line in lines if line.startswith('RUN ')),None)
  if marker is None:raise RuntimeError(f'{model} failed before game start; inspect {log}')
  run=Path(marker)

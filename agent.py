@@ -315,7 +315,7 @@ def main():
               'vizdoom': vzd.__version__, 'tics_per_second': TICRATE,
               'command_ttl_seconds':2, 'automatic_weapon_pickup_switch':False,
                'source_sha256': {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
-                                 for name in ['agent.py', 'doomlib/overlay.py', 'doomlib/report.py', 'doomlib/navigation.py', 'doomlib/combat.py', 'doomlib/items.py', 'doomlib/mission.py', 'doomlib/policy.py', 'doomlib/executor.py']}}
+                                 for name in ['agent.py', 'doomlib/__init__.py', 'doomlib/overlay.py', 'doomlib/report.py', 'doomlib/navigation.py', 'doomlib/combat.py', 'doomlib/items.py', 'doomlib/mission.py', 'doomlib/policy.py', 'doomlib/executor.py']}}
     if health.get('laya_source_commit'):
         config['laya_source_commit'] = health['laya_source_commit']
     (run/'source').mkdir()
