@@ -1,10 +1,12 @@
 # doomLaya
 
+[English](README.en.md) · Русский
+
 Laya и Jev играют в FreeDoom. Модель выбирает действие, цель и оружие;
 контроллер строит маршрут, целится и нажимает кнопки по её команде.
 
-[Обучение](TRAINING.md) · [Результаты](COMPARISON.md) ·
-[Веса и публикация](PUBLISHING.md) · [Контракт управления](DOOM.md)
+[Обучение](docs/TRAINING.md) · [Результаты](docs/COMPARISON.md) ·
+[Веса и публикация](docs/PUBLISHING.md) · [Контракт управления](docs/DOOM.md)
 
 ## Проверенный результат
 
@@ -27,7 +29,7 @@ Laya и Jev играют в FreeDoom. Модель выбирает действ
 [Видео: Laya v3 и Jev](https://github.com/azalio/doomLaya/releases/download/v0.1.0/laya-vs-jev.mp4) ·
 [Видео: исходная Laya и Jev](https://github.com/azalio/doomLaya/releases/download/v0.1.0/original-laya-vs-jev.mp4) ·
 [Модель на Hugging Face](https://huggingface.co/azalio/laya-doom-v3) · [Архив весов](https://github.com/azalio/doomLaya/releases/tag/v0.1.0).
-Команды скачивания — в [PUBLISHING.md](PUBLISHING.md).
+Команды скачивания — в [PUBLISHING.md](docs/PUBLISHING.md).
 
 ## Установка
 
@@ -79,8 +81,8 @@ uv pip install --python .venv/bin/python -r requirements-model.txt
 (cd checkpoints/laya-doom-v3 && shasum -a 256 -c SHA256SUMS)
 ```
 
-Другие варианты: [архив из GitHub Release](PUBLISHING.md) или
-[обучение своей модели](TRAINING.md). Команда `git clone` скачивает исходники без весов.
+Другие варианты: [архив из GitHub Release](docs/PUBLISHING.md) или
+[обучение своей модели](docs/TRAINING.md). Команда `git clone` скачивает исходники без весов.
 
 ```bash
 .venv/bin/python serve_doom_laya.py \
