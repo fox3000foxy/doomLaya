@@ -10,7 +10,6 @@ import os
 from pathlib import Path
 import re
 import statistics
-import subprocess
 import time
 
 import numpy as np
@@ -18,9 +17,6 @@ import requests
 import vizdoom as vzd
 
 from doomlib.overlay import Overlay, Recorder
-from doomlib.navigation import Navigator
-from doomlib.combat import Combat, WEAPON_NAMES
-from doomlib.items import Items
 from doomlib.mission import Mission, map_data
 from doomlib.report import build_report
 from doomlib.executor import Executor

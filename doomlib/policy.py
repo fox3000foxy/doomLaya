@@ -1,5 +1,4 @@
 """Observation-to-question formatting; only model responses select commands."""
-import math
 from doomlib.combat import WEAPON_NAMES
 
 ACTIONS={k:k for k in ('attack','pickup','open_door','exit','retreat','explore','wait')}
