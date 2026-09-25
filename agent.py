@@ -496,6 +496,8 @@ def main():
     except KeyboardInterrupt:
         status = 'interrupted'
     except Exception as exc:
+        import traceback
+        traceback.print_exc()  # <-- ajout temporaire pour debug
         fatal = type(exc).__name__ + ': ' + (str(exc) if isinstance(exc, RuntimeError) else 'see events')
         status = 'failed'
         event('fatal', total_ticks, error_type=type(exc).__name__)

@@ -34,7 +34,7 @@ pre{{white-space:pre-wrap;overflow-wrap:anywhere;background:#1d2736;padding:20px
 <details><summary>Полная сводка</summary><pre>{html.escape(json.dumps(summary, ensure_ascii=False, indent=2))}</pre></details>
 <h2>Решения модели</h2><div class="table"><table><tr><th>Игра, с</th><th>Команда</th><th>Оружие</th><th>Применено</th><th>Причина</th><th>Latency, ms</th><th>Tokens</th></tr>{''.join(rows)}</table></div></html>'''
     dest = root / 'report.html'
-    dest.write_text(doc)
+    dest.write_text(doc, encoding="utf-8")
     return dest
 
 
